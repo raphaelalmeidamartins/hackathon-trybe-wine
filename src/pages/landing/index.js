@@ -1,4 +1,5 @@
 import React from 'react';
+import HowItWorks from '../../components';
 
 function Landing() {
   return (
@@ -6,6 +7,7 @@ function Landing() {
       {/* Header */}
       <main>
         {/* Aqui colocar as sections */}
+        <HowItWorks />
       </main>
       {/* Aqui colocar um footer */}
     </>
