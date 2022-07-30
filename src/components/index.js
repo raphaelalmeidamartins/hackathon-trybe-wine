@@ -1,4 +1,4 @@
 /* Importar e exportar todos os components */
-import HowItWorks from '../pages/landing/sections/HowItWorks/index';
+import WhatsInsideYourBox from '../pages/landing/sections/WhatsInsideYourBox';
 
-export default HowItWorks;
+export default WhatsInsideYourBox;
