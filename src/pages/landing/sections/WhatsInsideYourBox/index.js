@@ -23,6 +23,7 @@ function WhatsInsideYourBox() {
             cardImage={wineBottles}
             cardTitle="2 vinhos"
             content="Você receberá 2 garrafas inéditas selecionadas pelos nossos WineHunters."
+            imgDescription="Duas garrafas de vinho"
           />
         </Grid>
         <Grid
@@ -35,6 +36,7 @@ function WhatsInsideYourBox() {
             cardImage={magazine}
             cardTitle="1 revista"
             content="Conteúdo exclusivo para Sócios, como harmonizações, dicas e curiosidades sobre o mundo do vinho."
+            imgDescription="Uma revista"
           />
         </Grid>
         <Grid
@@ -47,6 +49,7 @@ function WhatsInsideYourBox() {
             cardImage={dropper}
             cardTitle="1 corta-gotas"
             content="Todo mês uma arte diferente para você colecionar e servir seu vinho sem desperdiçar nem uma gota!"
+            imgDescription="Um corta gotas"
           />
         </Grid>
       </Grid>

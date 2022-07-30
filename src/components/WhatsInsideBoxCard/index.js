@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid } from '@mui/material';
 
-function WhatsInsideBoxCard({ cardImage, cardTitle, content }) {
+function WhatsInsideBoxCard({
+  cardImage, cardTitle, content, imgDescription,
+}) {
   return (
     <Grid
       component="section"
@@ -15,7 +17,7 @@ function WhatsInsideBoxCard({ cardImage, cardTitle, content }) {
         sm={2}
         md={4}
       >
-        <img src={cardImage} alt="descricao da imagem" />
+        <img src={cardImage} alt={imgDescription} />
       </Grid>
       <Grid
         item
@@ -34,6 +36,7 @@ WhatsInsideBoxCard.propTypes = {
   cardImage: PropTypes.string.isRequired,
   cardTitle: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
+  imgDescription: PropTypes.string.isRequired,
 };
 
 export default WhatsInsideBoxCard;
