@@ -12,8 +12,9 @@ export default function HowItWorks() {
         No Clube Wine você recebe, todo mês, 2 rótulos escolhidos
         a dedo das melhores vinícolas do mundo!
       </p>
-      <Grid container columns={{ xs: 4, sm: 8, md: 12 }}>
-        <Grid item xs={4} sm={2} md={3} spacing={2}>
+      <Grid component="section" container columns={{ xs: 4, sm: 8, md: 12 }}>
+
+        <Grid component="section" item xs={4} sm={2} md={3} spacing={2}>
           <Box sx={{
             display: 'flex',
             alignItems: 'center',
@@ -30,7 +31,7 @@ export default function HowItWorks() {
           </Box>
         </Grid>
 
-        <Grid item xs={4} sm={2} md={3} spacing={2}>
+        <Grid component="section" item xs={4} sm={2} md={3} spacing={2}>
           <Box sx={{
             display: 'flex',
             alignItems: 'center',
@@ -47,7 +48,7 @@ export default function HowItWorks() {
           </Box>
         </Grid>
 
-        <Grid item xs={4} sm={2} md={3} spacing={2}>
+        <Grid component="section" item xs={4} sm={2} md={3} spacing={2}>
           <Box sx={{
             display: 'flex',
             alignItems: 'center',
@@ -64,7 +65,7 @@ export default function HowItWorks() {
           </Box>
         </Grid>
 
-        <Grid item xs={4} sm={2} md={3} spacing={2}>
+        <Grid component="section" item xs={4} sm={2} md={3} spacing={2}>
           <Box sx={{
             display: 'flex',
             alignItems: 'center',
