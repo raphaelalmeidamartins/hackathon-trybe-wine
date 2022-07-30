@@ -41,8 +41,8 @@ const navLinks = [
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
+  const handleOpenNavMenu = ({ currentTarget }) => {
+    setAnchorElNav(currentTarget);
   };
 
   const handleCloseNavMenu = () => {
