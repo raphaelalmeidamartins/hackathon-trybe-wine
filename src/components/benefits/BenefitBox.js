@@ -4,7 +4,7 @@ import { Box } from '@mui/material';
 
 function BenefitBox({ pContent, imgAlt, imgSrc }) {
   return (
-    <Box>
+    <Box component="section">
       <img alt={imgAlt} src={imgSrc} />
       <p>{pContent}</p>
     </Box>
