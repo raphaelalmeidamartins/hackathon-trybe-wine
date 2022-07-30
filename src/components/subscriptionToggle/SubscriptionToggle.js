@@ -1,7 +1,7 @@
 import { Grid, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import PlanCard from './PlanCard';
+import PlanCard from '../planCard/PlanCard';
 
 function SubscriptionToggle() {
   const [subscriptionType, setSubscriptionType] = useState('0');

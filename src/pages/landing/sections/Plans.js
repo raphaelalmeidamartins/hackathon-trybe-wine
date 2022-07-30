@@ -1,8 +1,8 @@
 import { Grid, Hidden } from '@mui/material';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import PlanCard from '../../../components/PlanCard';
-import SubscriptionToggle from '../../../components/SubscriptionToggle';
+import PlanCard from '../../../components/planCard/PlanCard';
+import SubscriptionToggle from '../../../components/subscriptionToggle/SubscriptionToggle';
 import essenciaisImg from '../../../images/mock-essenciais.svg';
 import { fetchSubscriptionData } from '../../../store/subscription';
 
