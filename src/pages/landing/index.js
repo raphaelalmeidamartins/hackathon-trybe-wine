@@ -1,4 +1,5 @@
 import React from 'react';
+import Benefits from '../../components/benefits';
 
 function Landing() {
   return (
@@ -6,6 +7,7 @@ function Landing() {
       {/* Header */}
       <main>
         {/* Aqui colocar as sections */}
+        <Benefits />
       </main>
       {/* Aqui colocar um footer */}
     </>
