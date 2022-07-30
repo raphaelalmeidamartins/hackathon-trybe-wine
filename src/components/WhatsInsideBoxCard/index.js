@@ -6,25 +6,11 @@ function WhatsInsideBoxCard({
   cardImage, cardTitle, content, imgDescription,
 }) {
   return (
-    <Grid
-      component="section"
-      container
-      columns={{ xs: 4, sm: 6, md: 12 }}
-    >
-      <Grid
-        item
-        xs={4}
-        sm={2}
-        md={4}
-      >
+    <Grid component="section" container columns={{ xs: 4, sm: 6, md: 12 }}>
+      <Grid item xs={4} sm={2} md={4}>
         <img src={cardImage} alt={imgDescription} />
       </Grid>
-      <Grid
-        item
-        xs={4}
-        sm={2}
-        md={4}
-      >
+      <Grid item xs={4} sm={2} md={4}>
         <h2>{cardTitle}</h2>
         <p>{content}</p>
       </Grid>

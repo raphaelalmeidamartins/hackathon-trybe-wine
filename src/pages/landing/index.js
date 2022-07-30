@@ -1,14 +1,16 @@
 import React from 'react';
-import WhatsInsideYourBox from '../../components';
+
 import Benefits from '../../components/benefits';
 import Header from '../../components/Header';
+import HowItWorks from './sections/HowItWorks';
+import WhatsInsideYourBox from './sections/WhatsInsideYourBox';
 
 function Landing() {
   return (
     <>
       <Header />
       <main>
-        {/* Aqui colocar as sections */}
+        <HowItWorks />
         <WhatsInsideYourBox />
         <Benefits />
       </main>
