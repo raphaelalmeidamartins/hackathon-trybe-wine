@@ -167,3 +167,5 @@ https://documenter.getpostman.com/view/10015622/UVJiiuHi#fe849253-c47a-492f-a860
 Link direto para a API: https://wine-back-test.herokuapp.com/products?page=1&limit=10
 
 Para a API de modalidades, o link direto: https://wine-club-proxy.herokuapp.com/modalities
+
+##teste
