@@ -1,8 +1,9 @@
 {
-  // "editor.formatOnSave": true,
+  "editor.formatOnSave": true,
   "editor.detectIndentation": true,
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "conventionalCommits.scopes": ["howItWorks", "howItWorks/icons", "README.md"]
 }
