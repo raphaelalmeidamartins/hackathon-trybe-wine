@@ -1,7 +1,7 @@
-import icon1 from '../images/icon-01.webp';
-import icon2 from '../images/icon-02.webp';
-import icon3 from '../images/icon-03.webp';
-import icon4 from '../images/icon-04.webp';
+import icon1 from './images/icon-01.webp';
+import icon2 from './images/icon-02.webp';
+import icon3 from './images/icon-03.webp';
+import icon4 from './images/icon-04.webp';
 
 const steps = {
   one: {
@@ -11,7 +11,8 @@ const steps = {
   },
   two: {
     title: 'Curadoria',
-    description: 'Nossos Winehunters recebem amostras de exemplares e fazem diversas análises para seleção dos melhores vinhos.',
+    description:
+      'Nossos Winehunters recebem amostras de exemplares e fazem diversas análises para seleção dos melhores vinhos.',
     image: icon2,
   },
   three: {

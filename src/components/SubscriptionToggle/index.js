@@ -1,7 +1,7 @@
 import { Grid, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import PlanCard from '../planCard/PlanCard';
+import PlanCard from '../PlanCard';
 
 function SubscriptionToggle() {
   const [subscriptionType, setSubscriptionType] = useState('0');
@@ -16,7 +16,13 @@ function SubscriptionToggle() {
   return (
     <>
       <Grid item xs={12} sx={{ marginBottom: 2 }}>
-        <ToggleButtonGroup color="primary" sx={{ display: 'flex', justifyContent: 'center' }} exclusive value={subscriptionType} onChange={handleSubscriptionChange}>
+        <ToggleButtonGroup
+          color="primary"
+          sx={{ display: 'flex', justifyContent: 'center' }}
+          exclusive
+          value={subscriptionType}
+          onChange={handleSubscriptionChange}
+        >
           <ToggleButton value="0">Anual</ToggleButton>
           <ToggleButton value="1">Mensal</ToggleButton>
         </ToggleButtonGroup>

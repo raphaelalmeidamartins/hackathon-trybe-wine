@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid } from '@mui/material';
-import BenefitBox from './BenefitBox';
+import BenefitBox from '../../../../components/BenefitBox';
 import { benefits } from './utils/helpers';
 
 function Benefits() {

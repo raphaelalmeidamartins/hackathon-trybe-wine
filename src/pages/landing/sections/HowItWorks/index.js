@@ -1,25 +1,23 @@
 import { Box, Container, Grid } from '@mui/material';
 import * as React from 'react';
-import steps from './helpers/index';
+import steps from './utils/helpers';
 
 export default function HowItWorks() {
   return (
-    <Container
-      component="section"
-    >
+    <Container component="section">
       <h2>Entenda como funciona:</h2>
       <p>
-        No Clube Wine você recebe, todo mês, 2 rótulos escolhidos
-        a dedo das melhores vinícolas do mundo!
+        No Clube Wine você recebe, todo mês, 2 rótulos escolhidos a dedo das melhores vinícolas do
+        mundo!
       </p>
       <Grid component="section" container columns={{ xs: 4, sm: 8, md: 12 }}>
-
         <Grid component="section" item xs={4} sm={2} md={3} spacing={2}>
-          <Box sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
           >
             <Box>
               <img src={steps.one.image} alt={steps.one.title} />
@@ -32,11 +30,12 @@ export default function HowItWorks() {
         </Grid>
 
         <Grid component="section" item xs={4} sm={2} md={3} spacing={2}>
-          <Box sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
           >
             <Box>
               <img src={steps.two.image} alt={steps.two.title} />
@@ -49,11 +48,12 @@ export default function HowItWorks() {
         </Grid>
 
         <Grid component="section" item xs={4} sm={2} md={3} spacing={2}>
-          <Box sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
           >
             <Box>
               <img src={steps.three.image} alt={steps.three.title} />
@@ -66,11 +66,12 @@ export default function HowItWorks() {
         </Grid>
 
         <Grid component="section" item xs={4} sm={2} md={3} spacing={2}>
-          <Box sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
           >
             <Box>
               <img src={steps.four.image} alt={steps.four.title} />
@@ -81,7 +82,6 @@ export default function HowItWorks() {
             </Box>
           </Box>
         </Grid>
-
       </Grid>
     </Container>
   );
