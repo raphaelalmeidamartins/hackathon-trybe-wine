@@ -12,7 +12,7 @@ export const fetchSubscriptionData = createAsyncThunk(
 const subscription = createSlice({
   name: 'users',
   initialState: {
-    data: {},
+    data: undefined,
   },
   reducers: {
   },
