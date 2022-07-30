@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from '../../components/footer';
 import Benefits from '../../components/benefits';
 import Header from '../../components/Header';
 import HowItWorks from './sections/HowItWorks';
@@ -14,6 +14,7 @@ function Landing() {
         <WhatsInsideYourBox />
         <Benefits />
       </main>
+      <Footer />
       {/* Aqui colocar um footer */}
     </>
   );
