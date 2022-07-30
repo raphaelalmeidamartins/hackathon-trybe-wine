@@ -1,10 +1,11 @@
 import React from 'react';
 import Benefits from '../../components/benefits';
+import Header from '../../components/Header';
 
 function Landing() {
   return (
     <>
-      {/* Header */}
+      <Header />
       <main>
         {/* Aqui colocar as sections */}
         <Benefits />
