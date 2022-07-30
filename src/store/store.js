@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
+import stockReducer from './stock';
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    stock: stockReducer,
+  },
 });
 
 export default store;
