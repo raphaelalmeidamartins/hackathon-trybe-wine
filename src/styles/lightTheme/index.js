@@ -36,6 +36,7 @@ const lightTheme = createTheme({
     babyPink: '#d6a9d4',
     burnetOrange: '#8a2503',
     burnetSienna: '#D48C70',
+    gradient: 'linear-gradient(0deg, rgba(212, 140, 112, 0.6) 0%, white 100%',
     lightIndigo: '#d9dffc',
   },
   typography: {

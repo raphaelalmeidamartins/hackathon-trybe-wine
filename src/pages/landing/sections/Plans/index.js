@@ -1,3 +1,4 @@
+import { useTheme } from '@emotion/react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Hidden from '@mui/material/Hidden';
@@ -12,13 +13,15 @@ import PlansContainerBox from './style';
 function Plans() {
   const dispatch = useDispatch();
   const subscription = useSelector((state) => state.subscription);
+  const { colors: { gradient } } = useTheme();
+  console.log(gradient);
 
   useEffect(() => {
     dispatch(fetchSubscriptionData());
   }, []);
 
   return (
-    <PlansContainerBox>
+    <PlansContainerBox gradient={gradient}>
       <Container component="section">
         {subscription?.plans && (
         <Grid container justifyContent="center" columns={{ xs: 4, sm: 8, md: 12 }}>

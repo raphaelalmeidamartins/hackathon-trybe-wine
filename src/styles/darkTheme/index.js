@@ -36,7 +36,7 @@ const darkTheme = createTheme({
     babyPink: '#d6a9d4',
     burnetOrange: '#ffb49b',
     burnetSienna: '#D48C70',
-    gradient: 'linear-gradient(0deg, #521532ff 0%, #3b1e2e 100%',
+    gradient: 'linear-gradient(0deg, rgba(209, 112, 212, 0.25) 0%, #3b1e2e 100%',
     lightIndigo: '#2a3468',
   },
 });

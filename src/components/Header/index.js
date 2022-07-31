@@ -14,12 +14,15 @@ import { setTheme } from '../../store/theme';
 import lightTheme from '../../styles/lightTheme';
 import navLinks from './utils/helpers';
 import MenuHambugerIcon from './utils/icons/MenuHamburgerIcon';
-import logo from './utils/images/wine-logo.svg';
+import logoImageNegative from './utils/images/wine-logo-negative.svg';
+import logoImage from './utils/images/wine-logo.svg';
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const theme = useSelector((state) => state.theme.data);
   const dispatch = useDispatch();
+
+  const logo = theme === 'dark' ? logoImageNegative : logoImage;
 
   const handleOpenNavMenu = ({ currentTarget }) => {
     setAnchorElNav(currentTarget);
