@@ -1,6 +1,6 @@
 {
   "name": "wine-landing-page-hackathon",
-  "homepage": "https://raphaelmartins.dev/hackathon-t19-wine",
+  "homepage": "https://raphaelmartins.dev/hackathon-trybe-wine",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
