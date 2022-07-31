@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hackathon-trybe-wine/static/css/main.aefdc59b.css",
-    "main.js": "/hackathon-trybe-wine/static/js/main.e8e47d13.js",
+    "main.js": "/hackathon-trybe-wine/static/js/main.f826627e.js",
     "static/media/mock-essenciais.svg": "/hackathon-trybe-wine/static/media/mock-essenciais.41faadbc876cc355e57e19efecae15cf.svg",
     "static/media/icon-04.svg": "/hackathon-trybe-wine/static/media/icon-04.d027c3488bd7c1bfe717bdde26fe8d0b.svg",
     "static/media/icon-01.svg": "/hackathon-trybe-wine/static/media/icon-01.44419ab97645ec8c7f71db4a0d97d6c9.svg",
@@ -18,13 +18,14 @@
     "static/media/wineBottles.png": "/hackathon-trybe-wine/static/media/wineBottles.4cf1b4a7e0fc9a7cf635.png",
     "static/media/Alvinho.svg": "/hackathon-trybe-wine/static/media/Alvinho.d90ddd91164c24bf5defeb75bba1ccfa.svg",
     "static/media/wine-logo.svg": "/hackathon-trybe-wine/static/media/wine-logo.f658ca14467db13061ce9bb6b17aa4a4.svg",
+    "static/media/wine-logo-negative.svg": "/hackathon-trybe-wine/static/media/wine-logo-negative.743d36908409b5692312589554cf5080.svg",
     "static/media/wine-w-logo.svg": "/hackathon-trybe-wine/static/media/wine-w-logo.bd2aea7a98ed040bfbebb214420e7596.svg",
     "index.html": "/hackathon-trybe-wine/index.html",
     "main.aefdc59b.css.map": "/hackathon-trybe-wine/static/css/main.aefdc59b.css.map",
-    "main.e8e47d13.js.map": "/hackathon-trybe-wine/static/js/main.e8e47d13.js.map"
+    "main.f826627e.js.map": "/hackathon-trybe-wine/static/js/main.f826627e.js.map"
   },
   "entrypoints": [
     "static/css/main.aefdc59b.css",
-    "static/js/main.e8e47d13.js"
+    "static/js/main.f826627e.js"
   ]
 }
