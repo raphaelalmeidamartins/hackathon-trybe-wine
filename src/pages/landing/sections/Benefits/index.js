@@ -15,7 +15,11 @@ function Benefits({ headingToggle }) {
           component="h2"
           align="center"
           gutterBottom
-          sx={{ marginBottom: '48px' }}
+          sx={{
+            fontFamily: '"Sniglet", cursive',
+            fontWeight: 700,
+            marginBottom: '48px',
+          }}
         >
           {headingToggle
             ? 'Como Sócio Wine você garante benefícios exclusivos'

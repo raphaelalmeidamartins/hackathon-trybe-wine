@@ -13,6 +13,7 @@ export default styled(Box)`
 
   h1 {
     color: ${(props) => props.theme.palette.secondary.main};
+    font-family: "Sniglet", cursive';
     font-size: 2.2rem;
     margin: 0;
     text-transform: uppercase;
