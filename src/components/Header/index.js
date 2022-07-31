@@ -14,6 +14,7 @@ import { setTheme } from '../../store/theme';
 import lightTheme from '../../styles/lightTheme';
 import navLinks from './utils/helpers';
 import MenuHambugerIcon from './utils/icons/MenuHamburgerIcon';
+import MenuHambugerIconNegative from './utils/icons/MenuHamburgerIconNegative';
 import logoImageNegative from './utils/images/wine-logo-negative.svg';
 import logoImage from './utils/images/wine-logo.svg';
 
@@ -33,7 +34,12 @@ function Header() {
   };
 
   return (
-    <AppBar sx={{ backgroundColor: (theme === 'dark' ? lightTheme.palette.secondary.main : 'white') }}>
+    <AppBar
+      sx={{
+        backgroundColor:
+          theme === 'dark' ? lightTheme.palette.secondary.main : 'white',
+      }}
+    >
       <Container>
         <Toolbar disableGutters>
           <Box
@@ -60,7 +66,11 @@ function Header() {
               }}
             >
               <SvgIcon>
-                <MenuHambugerIcon />
+                {theme === 'dark' ? (
+                  <MenuHambugerIconNegative />
+                ) : (
+                  <MenuHambugerIcon />
+                )}
               </SvgIcon>
             </IconButton>
             <Drawer
@@ -131,9 +141,11 @@ function Header() {
               sx={{ margin: '0 6px', p: 0 }}
             >
               <SvgIcon>
-                {theme === 'dark'
-                  ? <BsFillSunFill color="white" />
-                  : <BsFillMoonFill color="black" />}
+                {theme === 'dark' ? (
+                  <BsFillSunFill color="white" />
+                ) : (
+                  <BsFillMoonFill color="black" />
+                )}
               </SvgIcon>
             </IconButton>
           </Box>
@@ -149,9 +161,11 @@ function Header() {
               onClick={() => dispatch(setTheme(theme === 'dark' ? 'light' : 'dark'))}
               sx={{ margin: '0 6px', p: 0 }}
             >
-              {theme === 'dark'
-                ? <BsFillSunFill color="white" />
-                : <BsFillMoonFill color="black" />}
+              {theme === 'dark' ? (
+                <BsFillSunFill color="white" />
+              ) : (
+                <BsFillMoonFill color="black" />
+              )}
             </IconButton>
           </Box>
         </Toolbar>
