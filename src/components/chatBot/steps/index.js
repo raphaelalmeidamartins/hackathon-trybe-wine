@@ -1,3 +1,7 @@
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import ChatBotContainer from '../styles/components';
+
 const answers = [
   {
     id: 'greeting-1',
@@ -34,17 +38,32 @@ const answers = [
   },
   {
     id: 'membership',
-    message: 'Oi {previousValue}, Como posso ajudar!?',
+    component: (
+      <ChatBotContainer>
+        <h1>Assinaturas</h1>
+        <Link to="/checkout">Assinaturas</Link>
+      </ChatBotContainer>
+    ),
     end: true,
   },
   {
     id: 'wine',
-    message: 'Oi {previousValue}, Como posso ajudar!?',
+    component: (
+      <ChatBotContainer>
+        <h1>Assinaturas</h1>
+        <Link to="/checkout">Assinaturas</Link>
+      </ChatBotContainer>
+    ),
     end: true,
   },
   {
     id: 'other drinks',
-    message: 'Oi {previousValue}, Como posso ajudar!?',
+    component: (
+      <ChatBotContainer>
+        <h1>Assinaturas</h1>
+        <Link to="/checkout">Assinaturas</Link>
+      </ChatBotContainer>
+    ),
     end: true,
   },
 ];
