@@ -4,7 +4,10 @@ import {
 import PropTypes from 'prop-types';
 import React from 'react';
 import { TbGift } from 'react-icons/tb';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import useElevation from '../../hooks/useElevation';
+import { setSubscriptionPlan } from '../../store/checkout';
 import PlanCardPaper from './style';
 
 function PlanCard({ selectedPlan }) {
@@ -13,6 +16,15 @@ function PlanCard({ selectedPlan }) {
     handleMouseOver,
     handleMouseOut,
   } = useElevation();
+
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  const handleSubscribe = () => {
+    const subscriptionType = selectedPlan.name === 'Plano Anual' ? 'annual' : 'monthly';
+    dispatch(setSubscriptionPlan(subscriptionType));
+    history.push('/checkout');
+  };
 
   return (
     <Grid item xs={4} sm={12} justifyContent="center">
@@ -49,7 +61,7 @@ function PlanCard({ selectedPlan }) {
             color="primary"
           />
         </Box>
-        <Button variant="contained" disableElevation>
+        <Button variant="contained" onClick={handleSubscribe} disableElevation>
           {`Assinar ${selectedPlan.name.split(' ')[1].toLowerCase()}`}
         </Button>
       </PlanCardPaper>

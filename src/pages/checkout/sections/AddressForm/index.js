@@ -1,19 +1,13 @@
-import React, { useState } from 'react';
-import { IoLocationOutline } from 'react-icons/io5';
 import {
   Container,
-  FormControlLabel,
-  Box,
-  InputLabel,
-  MenuItem,
-  Select,
-  Switch,
-  TextField as Input,
-  Grid,
+  FormControlLabel, Grid, MenuItem, Switch,
+  TextField,
 } from '@mui/material';
+import React, { useState } from 'react';
+import { IoLocationOutline } from 'react-icons/io5';
 import { useDispatch } from 'react-redux';
-import brStates from './utils/helpers';
 import { setAddress } from '../../../../store/checkout';
+import brStates from './utils/helpers';
 
 function AddressForm() {
   const [addressForm, setAddressForm] = useState({
@@ -44,72 +38,74 @@ function AddressForm() {
   };
 
   return (
-    <Container component="section" maxWidth="lg">
-      <h2>
+    <Container component="section">
+      <h2 style={{ display: 'flex', alignItems: 'center' }}>
         <IoLocationOutline />
-        {' Endereço de entrega'}
+        <span style={{ paddingLeft: '8px', paddingTop: '2px' }}>{' Endereço de entrega'}</span>
       </h2>
-      <Grid container columns={{ xs: 4, sm: 8, md: 12 }}>
-        <Grid item xs={2} sm={4} md={6}>
-          <InputLabel htmlFor="identification">Identificação do endereço</InputLabel>
-          <Input
-            id="identification"
+      <Grid container columns={{ xs: 4, sm: 8, md: 12 }} spacing={3}>
+        <Grid item xs={4} sm={8} md={6} sx={{ paddingLeft: '0px' }}>
+          <TextField
+            fullWidth
+            id="outlined-helperText"
+            // id="identification"
             name="identification"
             value={addressForm.identification}
             onChange={handleChange}
+            label="Identificação do endereço"
           />
         </Grid>
-        <Grid item xs={2} sm={4} md={6}>
-          <InputLabel htmlFor="username">Nome do destinatário</InputLabel>
-          <Input
+        <Grid item xs={4} sm={8} md={6}>
+          <TextField
+            fullWidth
             id="username"
             name="username"
+            label="Nome do destinatário"
             value={addressForm.username}
             onChange={handleChange}
           />
         </Grid>
-        <Grid item xs={2} sm={4} md={6}>
-          <InputLabel htmlFor="cep">CEP</InputLabel>
-          <Input id="cep" name="cep" value={addressForm.cep} onChange={handleChange} />
+        <Grid item xs={4} sm={8} md={6}>
+          <TextField fullWidth id="cep" label="CEP" name="cep" value={addressForm.cep} onChange={handleChange} />
         </Grid>
-        <Grid item xs={2} sm={4} md={6}>
-          <InputLabel htmlFor="address">Endereço</InputLabel>
-          <Input id="address" name="address" value={addressForm.address} onChange={handleChange} />
+        <Grid item xs={4} sm={8} md={6}>
+          <TextField fullWidth id="address" label="Endereço" name="address" value={addressForm.address} onChange={handleChange} />
         </Grid>
-        <Grid item xs={2} sm={4} md={6}>
-          <InputLabel htmlFor="number">Número</InputLabel>
-          <Input id="number" name="number" value={addressForm.number} onChange={handleChange} />
+        <Grid item xs={4} sm={8} md={6}>
+          <TextField fullWidth id="number" label="Número" name="number" value={addressForm.number} onChange={handleChange} />
         </Grid>
-        <Grid item xs={2} sm={4} md={6}>
-          <InputLabel htmlFor="complement">Complemento</InputLabel>
-          <Input
+        <Grid item xs={4} sm={8} md={6}>
+          <TextField
+            fullWidth
+            label="Complemento"
             id="complement"
             name="complement"
             value={addressForm.complement}
             onChange={handleChange}
           />
         </Grid>
-        <Grid item xs={2} sm={4} md={6}>
-          <InputLabel htmlFor="district">Bairro</InputLabel>
-          <Input
+        <Grid item xs={4} sm={8} md={6}>
+          <TextField
+            fullWidth
+            label="Bairro"
             id="district"
             name="district"
             value={addressForm.district}
             onChange={handleChange}
           />
         </Grid>
-        <Grid item xs={2} sm={4} md={6}>
-          <InputLabel htmlFor="city">Cidade</InputLabel>
-          <Input id="city" name="city" value={addressForm.city} onChange={handleChange} />
+        <Grid item xs={4} sm={8} md={6}>
+          <TextField fullWidth id="city" label="Cidade" name="city" value={addressForm.city} onChange={handleChange} />
         </Grid>
-        <Grid item xs={2} sm={4} md={6}>
-          <InputLabel id="brState">Estado</InputLabel>
-          <Select
+        <Grid item xs={4} sm={8} md={6}>
+          <TextField
+            fullWidth
             labelId="brState"
             id="brState"
             name="state"
             value={addressForm.state}
             label="Estado"
+            select
             onChange={handleChange}
           >
             {brStates.map(({ value, label }) => (
@@ -117,18 +113,19 @@ function AddressForm() {
                 {label}
               </MenuItem>
             ))}
-          </Select>
+          </TextField>
         </Grid>
-        <Grid item xs={2} sm={4} md={6}>
-          <InputLabel htmlFor="observation">Complemento</InputLabel>
-          <Input
+        <Grid item xs={4} sm={8} md={6}>
+          <TextField
+            fullWidth
+            label="Observações"
             id="observation"
             name="observation"
             value={addressForm.observation}
             onChange={handleChange}
           />
         </Grid>
-        <Box component="section">
+        <Grid item component="section">
           <FormControlLabel
             control={(
               <Switch
@@ -140,7 +137,7 @@ function AddressForm() {
             )}
             label="Portaria 24h?"
           />
-        </Box>
+        </Grid>
       </Grid>
     </Container>
   );

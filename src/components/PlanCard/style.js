@@ -10,7 +10,7 @@ export default styled(Paper)`
   }
 
   h2 {
-    margin: 0;
+    margin-top: 0;
   }
 
   h3 {

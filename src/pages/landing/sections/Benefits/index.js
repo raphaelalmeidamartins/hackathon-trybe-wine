@@ -6,8 +6,9 @@ import { benefits } from './utils/helpers';
 
 function Benefits({ headingToggle }) {
   return (
-    <section
-      style={{ padding: '48px 0', width: '100vw', backgroundColor: 'white' }}
+    <section style={{
+      padding: '48px 0', width: '100vw', backgroundColor: 'white', borderTop: '1px solid #eee',
+    }}
     >
       <Container>
         <Typography
