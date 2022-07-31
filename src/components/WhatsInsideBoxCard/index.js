@@ -6,12 +6,12 @@ import {
   ImageContainer,
   TextContainer,
 } from './style';
-import theme from '../../styles/theme';
+import lightTheme from '../../styles/lightTheme';
 
 function WhatsInsideBoxCard({
   cardImage, cardTitle, content, imgDescription,
 }) {
-  const { colors } = theme;
+  const { colors } = lightTheme;
 
   return (
     <Grid component="section" container columns={{ xs: 2, sm: 12, md: 4 }}>

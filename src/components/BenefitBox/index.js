@@ -2,11 +2,11 @@ import { Grid, Paper, Typography } from '@mui/material';
 import PropTypes from 'prop-types';
 import React from 'react';
 import useElevation from '../../hooks/useElevation';
-import theme from '../../styles/theme';
+import lightTheme from '../../styles/lightTheme';
 
 function BenefitBox({ pContent, imgAlt, imgSrc }) {
   const { elevation, handleMouseOver, handleMouseOut } = useElevation();
-  const { colors } = theme;
+  const { colors } = lightTheme;
 
   return (
     <Paper

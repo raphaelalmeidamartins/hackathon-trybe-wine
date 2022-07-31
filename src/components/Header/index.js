@@ -7,13 +7,18 @@ import IconButton from '@mui/material/IconButton';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import * as React from 'react';
-import { BsFillSunFill } from 'react-icons/bs';
+import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
+import { useDispatch, useSelector } from 'react-redux';
+import { setTheme } from '../../store/theme';
 import navLinks from './utils/helpers';
 import MenuHambugerIcon from './utils/icons/MenuHamburgerIcon';
 import logo from './utils/images/wine-logo.svg';
+import lightTheme from '../../styles/lightTheme';
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const theme = useSelector((state) => state.theme.data);
+  const dispatch = useDispatch();
 
   const handleOpenNavMenu = ({ currentTarget }) => {
     setAnchorElNav(currentTarget);
@@ -24,7 +29,7 @@ function Header() {
   };
 
   return (
-    <AppBar sx={{ backgroundColor: 'white' }}>
+    <AppBar sx={{ backgroundColor: (theme === 'dark' ? lightTheme.palette.secondary.main : 'white') }}>
       <Container>
         <Toolbar disableGutters>
           <Box
@@ -123,7 +128,9 @@ function Header() {
               sx={{ margin: '0 6px', p: 0 }}
             >
               <SvgIcon>
-                <BsFillSunFill color="black" />
+                {theme === 'dark'
+                  ? <BsFillSunFill color="white" />
+                  : <BsFillMoonFill color="black" />}
               </SvgIcon>
             </IconButton>
           </Box>
@@ -136,11 +143,12 @@ function Header() {
           >
             <IconButton
               size="large"
-              component="a"
-              href=""
+              onClick={() => dispatch(setTheme(theme === 'dark' ? 'light' : 'dark'))}
               sx={{ margin: '0 6px', p: 0 }}
             >
-              <BsFillSunFill color="black" />
+              {theme === 'dark'
+                ? <BsFillSunFill color="white" />
+                : <BsFillMoonFill color="black" />}
             </IconButton>
           </Box>
         </Toolbar>
