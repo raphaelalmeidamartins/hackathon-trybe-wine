@@ -11,6 +11,10 @@
 
   Este projeto foi feito com base no case fornecido pela empresa [Wine](https://www.wine.com.br/clubewine/), para que seja desenvolvida uma solução para sua Landing page.
 
+  [Clique aqui](https://raphaelmartins.dev/hackathon-trybe-wine/#/) e confira o deploy do projeto no seu navegador.
+
+  Obeservação: o projeto ainda está em desenvolvimento, precisamos corrigir alguns detalhes no CSS
+
 <details>
   <summary>Sobre o desenvolvimento</summary>
   <br />
