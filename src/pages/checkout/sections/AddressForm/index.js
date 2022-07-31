@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { IoLocationOutline } from 'react-icons/io5';
 import {
   Container,
-  FormControl,
   FormControlLabel,
   Box,
   InputLabel,
@@ -10,9 +9,8 @@ import {
   Select,
   Switch,
   TextField as Input,
+  Grid,
 } from '@mui/material';
-import { useDispatch } from 'react-redux';
-import { setAddress } from '../../../../store/checkout';
 import brStates from './utils/helpers';
 
 function AddressForm() {
@@ -30,16 +28,12 @@ function AddressForm() {
     concierge: false,
   });
 
-  const dispatch = useDispatch();
-
   const handleChange = ({ target: { name, value } }) => {
     if (name === 'concierge') {
       const concierge = !addressForm.concierge;
       setAddressForm({ ...addressForm, concierge });
-      dispatch(setAddress({ ...addressForm, concierge }));
     } else {
       setAddressForm({ ...addressForm, [name]: value });
-      dispatch(setAddress({ ...addressForm, [name]: value }));
     }
   };
 
@@ -49,8 +43,8 @@ function AddressForm() {
         <IoLocationOutline />
         {' Endereço de entrega'}
       </h2>
-      <FormControl>
-        <Box component="section">
+      <Grid container columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid item xs={2} sm={4} md={6}>
           <InputLabel htmlFor="identification">Identificação do endereço</InputLabel>
           <Input
             id="identification"
@@ -58,6 +52,8 @@ function AddressForm() {
             value={addressForm.identification}
             onChange={handleChange}
           />
+        </Grid>
+        <Grid item xs={2} sm={4} md={6}>
           <InputLabel htmlFor="username">Nome do destinatário</InputLabel>
           <Input
             id="username"
@@ -65,16 +61,20 @@ function AddressForm() {
             value={addressForm.username}
             onChange={handleChange}
           />
-        </Box>
-        <Box component="section">
+        </Grid>
+        <Grid item xs={2} sm={4} md={6}>
           <InputLabel htmlFor="cep">CEP</InputLabel>
           <Input id="cep" name="cep" value={addressForm.cep} onChange={handleChange} />
+        </Grid>
+        <Grid item xs={2} sm={4} md={6}>
           <InputLabel htmlFor="address">Endereço</InputLabel>
           <Input id="address" name="address" value={addressForm.address} onChange={handleChange} />
-        </Box>
-        <Box component="section">
+        </Grid>
+        <Grid item xs={2} sm={4} md={6}>
           <InputLabel htmlFor="number">Número</InputLabel>
           <Input id="number" name="number" value={addressForm.number} onChange={handleChange} />
+        </Grid>
+        <Grid item xs={2} sm={4} md={6}>
           <InputLabel htmlFor="complement">Complemento</InputLabel>
           <Input
             id="complement"
@@ -82,8 +82,8 @@ function AddressForm() {
             value={addressForm.complement}
             onChange={handleChange}
           />
-        </Box>
-        <Box component="section">
+        </Grid>
+        <Grid item xs={2} sm={4} md={6}>
           <InputLabel htmlFor="district">Bairro</InputLabel>
           <Input
             id="district"
@@ -91,10 +91,12 @@ function AddressForm() {
             value={addressForm.district}
             onChange={handleChange}
           />
+        </Grid>
+        <Grid item xs={2} sm={4} md={6}>
           <InputLabel htmlFor="city">Cidade</InputLabel>
           <Input id="city" name="city" value={addressForm.city} onChange={handleChange} />
-        </Box>
-        <Box component="section">
+        </Grid>
+        <Grid item xs={2} sm={4} md={6}>
           <InputLabel id="brState">Estado</InputLabel>
           <Select
             labelId="brState"
@@ -110,6 +112,8 @@ function AddressForm() {
               </MenuItem>
             ))}
           </Select>
+        </Grid>
+        <Grid item xs={2} sm={4} md={6}>
           <InputLabel htmlFor="observation">Complemento</InputLabel>
           <Input
             id="observation"
@@ -117,7 +121,7 @@ function AddressForm() {
             value={addressForm.observation}
             onChange={handleChange}
           />
-        </Box>
+        </Grid>
         <Box component="section">
           <FormControlLabel
             control={(
@@ -131,7 +135,7 @@ function AddressForm() {
             label="Portaria 24h?"
           />
         </Box>
-      </FormControl>
+      </Grid>
     </Container>
   );
 }

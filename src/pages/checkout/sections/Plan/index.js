@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FiLayers } from 'react-icons/fi';
 import {
   Container, FormControl, FormControlLabel, Radio, RadioGroup,
@@ -6,14 +6,19 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 import planInfo from './utils/helpers';
 import MembershipPlanRadioLabel from '../../../../components/MembershipPlanRadioLabel';
-import { setSubscriptionPlan } from '../../../../store/checkout';
+import { setSubscriptionPlan, setTotal } from '../../../../store/checkout';
 
 function SubscriptionPlanForm() {
   const selectedPlan = useSelector((state) => state.checkout.subscriptionPlan);
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(setTotal());
+  }, []);
+
   const handleChange = ({ currentTarget: { value } }) => {
     dispatch(setSubscriptionPlan(value));
+    dispatch(setTotal());
   };
 
   return (
