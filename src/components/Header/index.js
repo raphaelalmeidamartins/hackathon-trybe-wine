@@ -7,35 +7,10 @@ import IconButton from '@mui/material/IconButton';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import * as React from 'react';
-import CartIcon from './icons/CartIcon';
-import MenuHambugerIcon from './icons/MenuHamburgerIcon';
-import ProfileOutlinedIcon from './icons/ProfileOutlinedIcon';
-import SearchCircleIcon from './icons/SearchCircleIcon';
-import SearchIcon from './icons/SearchIcon';
-import Logo from './Logo';
-
-const navLinks = [
-  {
-    name: 'Clube',
-    href: 'https://www.wine.com.br/clubewine/',
-  },
-  {
-    name: 'Loja',
-    href: 'https://www.wine.com.br/loja-vinhos',
-  },
-  {
-    name: 'Produtores',
-    href: 'https://www.wine.com.br/loja/produtor/',
-  },
-  {
-    name: 'Ofertas',
-    href: 'https://www.wine.com.br/vinhos-promocao',
-  },
-  {
-    name: 'Eventos',
-    href: 'https://we.wine.com.br/',
-  },
-];
+import { BsFillSunFill } from 'react-icons/bs';
+import navLinks from './utils/helpers';
+import MenuHambugerIcon from './utils/icons/MenuHamburgerIcon';
+import logo from './utils/images/wine-logo.svg';
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -55,7 +30,7 @@ function Header() {
           <Box
             sx={{ display: { xs: 'none', md: 'block' }, marginRight: '20px' }}
           >
-            <Logo />
+            <img src={logo} alt="Wine" />
           </Box>
           <Box
             sx={{
@@ -71,6 +46,9 @@ function Header() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              sx={{
+                marginRight: '8px',
+              }}
             >
               <SvgIcon>
                 <MenuHambugerIcon />
@@ -108,7 +86,11 @@ function Header() {
               marginRight: '20px',
             }}
           >
-            <Logo />
+            <img
+              src={logo}
+              alt="Wine"
+              style={{ height: '20px', objectFit: 'contain' }}
+            />
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {navLinks.map(({ name, href }) => (
@@ -139,21 +121,11 @@ function Header() {
               size="large"
               component="a"
               href=""
-              target="_blank"
               sx={{ margin: '0 6px', p: 0 }}
             >
               <SvgIcon>
-                <SearchIcon />
+                <BsFillSunFill color="black" />
               </SvgIcon>
-            </IconButton>
-            <IconButton
-              size="large"
-              component="a"
-              href=""
-              target="_blank"
-              sx={{ margin: '0 6px', p: 0 }}
-            >
-              <CartIcon />
             </IconButton>
           </Box>
           <Box
@@ -167,28 +139,9 @@ function Header() {
               size="large"
               component="a"
               href=""
-              target="_blank"
               sx={{ margin: '0 6px', p: 0 }}
             >
-              <SearchCircleIcon />
-            </IconButton>
-            <IconButton
-              size="large"
-              component="a"
-              href=""
-              target="_blank"
-              sx={{ margin: '0 6px', p: 0 }}
-            >
-              <ProfileOutlinedIcon />
-            </IconButton>
-            <IconButton
-              size="large"
-              component="a"
-              href=""
-              target="_blank"
-              sx={{ margin: '0 6px', p: 0 }}
-            >
-              <CartIcon />
+              <BsFillSunFill color="black" />
             </IconButton>
           </Box>
         </Toolbar>
