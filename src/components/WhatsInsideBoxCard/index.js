@@ -22,7 +22,6 @@ function WhatsInsideBoxCard({
           xs={8}
           sm={4}
           md={8}
-          spacing={8}
           sx={{
             minHeight: {
               sx: '200px',
