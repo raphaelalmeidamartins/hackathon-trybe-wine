@@ -8,7 +8,7 @@ export default function AlVinhoBot() {
       headerTitle="Alvinho"
       // recognitionEnable="true"
       // recognitionPlaceholder="estou te escutando"
-      // recognitionLang="pt-br"
+      recognitionLang="pt-br"
       // speechSynthesis={{ enable: true, lang: 'pt-br' }}
       steps={answers}
     />
