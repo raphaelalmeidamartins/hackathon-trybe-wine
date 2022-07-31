@@ -1,12 +1,7 @@
 import React from 'react';
 import { FiLayers } from 'react-icons/fi';
 import {
-  Container,
-  FormControl,
-  FormControlLabel,
-  FormLabel,
-  Radio,
-  RadioGroup,
+  Container, FormControl, FormControlLabel, Radio, RadioGroup,
 } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import planInfo from './utils/helpers';
@@ -23,11 +18,11 @@ function SubscriptionPlanForm() {
 
   return (
     <Container component="section" maxWidth="lg">
+      <h2>
+        <FiLayers />
+        {' Plano de pagamento'}
+      </h2>
       <FormControl>
-        <FormLabel id="membership-plan-form">
-          <FiLayers />
-          {' Plano de pagamento'}
-        </FormLabel>
         <RadioGroup
           column
           aria-labelledby="form-control-subscription-plan"

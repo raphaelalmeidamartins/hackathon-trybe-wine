@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
+import AddressForm from './sections/AddressForm';
 import SubscriptionPlanForm from './sections/Plan';
 
 function Checkout() {
@@ -12,6 +13,7 @@ function Checkout() {
       <p>{' a '}</p>
       <main>
         <SubscriptionPlanForm />
+        <AddressForm />
       </main>
     </>
   );
