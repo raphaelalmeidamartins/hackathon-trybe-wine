@@ -2,15 +2,18 @@ import { Grid, Paper, Typography } from '@mui/material';
 import PropTypes from 'prop-types';
 import React from 'react';
 import useElevation from '../../hooks/useElevation';
+import theme from '../../styles/theme';
 
 function BenefitBox({ pContent, imgAlt, imgSrc }) {
   const { elevation, handleMouseOver, handleMouseOut } = useElevation();
+  const { colors } = theme;
+
   return (
     <Paper
       elevation={elevation}
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
-      sx={{ padding: '16px' }}
+      sx={{ padding: '16px', backgroundColor: colors.lightIndigo }}
     >
       <Grid container columns={{ xs: 4, sm: 4, md: 4 }} component="section">
         <Grid

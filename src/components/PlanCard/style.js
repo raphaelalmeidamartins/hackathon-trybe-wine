@@ -9,13 +9,17 @@ export default styled(Paper)`
     text-align: center;
   }
 
+  h2 {
+    margin: 0;
+  }
+
   h3 {
     margin: 0 0 8px
   }
 
   .price {
+    font-style: italic;
     margin-bottom: 0;
-    color: grey;
   }
 
   .price-with-discount {

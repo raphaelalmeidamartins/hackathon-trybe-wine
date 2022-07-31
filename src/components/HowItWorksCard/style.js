@@ -24,7 +24,9 @@ const HowItWorksImage = styled.img`
 `;
 
 const HowItWorksLine = styled.div`
-  border: 4px solid #e7e7e7;
+  border-width: 3px;
+  border-color: #0eb843;
+  border-style: solid none;
   bottom: 60%;
   left: ${({ left }) => (left ? '0' : undefined)};
   position: absolute;
