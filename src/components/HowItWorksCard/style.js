@@ -33,7 +33,6 @@ const HowItWorksLine = styled.div`
   z-index: 1;
 
   @media only screen and (min-width: 600px) {
-    display: block;
     bottom: 60%;
     left: ${({ left }) => (left ? '0' : undefined)};
     position: absolute;
@@ -43,12 +42,7 @@ const HowItWorksLine = styled.div`
   }
 
   @media only screen and (max-width: 600px) {
-    height: ${({ half }) => (half ? '50%' : '100%')};
-    left: ${undefined};
-    position: absolute;
-    right: 60%;
-    bottom: ${({ right }) => (right ? '0' : undefined)};
-    width: 0;
+    display: none;
   }
 
 `;

@@ -6,7 +6,7 @@ import steps from './utils/helpers';
 
 export default function HowItWorks() {
   return (
-    <Container component="section">
+    <Container component="section" sx={{ marginTop: '48px' }}>
       <Typography variant="h3" element="h1" align="center" gutterBottom>
         Entenda como funciona
       </Typography>
