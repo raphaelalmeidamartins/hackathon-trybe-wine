@@ -23,7 +23,6 @@ function HowItWorksCard({
           xs={3}
           sm={4}
           md={4}
-          spacing={2}
           sx={{
             minHeight: {
               sx: '200px',
@@ -34,10 +33,32 @@ function HowItWorksCard({
             },
           }}
         >
-          <Typography variant="h5" align="center" component="h2" gutterBottom>
+          <Typography
+            variant="h6"
+            align="center"
+            component="h2"
+            gutterBottom
+            sx={{
+              fontWeight: 600,
+              textAlign: {
+                xs: 'left',
+                sm: 'center',
+              },
+            }}
+          >
             {title}
           </Typography>
-          <Typography align="center" paragraph>
+          <Typography
+            align="center"
+            variant="body2"
+            paragraph
+            sx={{
+              textAlign: {
+                xs: 'left',
+                sm: 'center',
+              },
+            }}
+          >
             {description}
           </Typography>
         </HowItWorksCardTextContainer>
