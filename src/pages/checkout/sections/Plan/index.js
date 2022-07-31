@@ -1,10 +1,11 @@
-import {
-  Container,
-  FormControl,
-  FormControlLabel, Grid, Paper, Radio,
-  RadioGroup,
-  useTheme,
-} from '@mui/material';
+import { useTheme } from '@mui/material';
+import Container from '@mui/material/Container';
+import FormControl from '@mui/material/FormControl';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
 import React, { useEffect } from 'react';
 import { FiLayers } from 'react-icons/fi';
 import { useDispatch, useSelector } from 'react-redux';
@@ -30,7 +31,9 @@ function SubscriptionPlanForm() {
     <Container component="section">
       <h2 style={{ display: 'flex', alignItems: 'center' }}>
         <FiLayers />
-        <span style={{ paddingLeft: '8px', paddingTop: '2px' }}>{' Plano de pagamento'}</span>
+        <span style={{ paddingLeft: '8px', paddingTop: '2px' }}>
+          {' Plano de pagamento'}
+        </span>
       </h2>
       <FormControl>
         <RadioGroup
@@ -45,7 +48,14 @@ function SubscriptionPlanForm() {
             <Grid item xs={12} md={6}>
               <Paper
                 sx={{
-                  width: '100%', padding: '16px', backgroundColor: theme.colors.plansCard, border: `3px solid ${selectedPlan === 'annual' ? '#4E1A3E' : theme.colors.plansCard}`,
+                  width: '100%',
+                  padding: '16px',
+                  backgroundColor: theme.colors.plansCard,
+                  border: `3px solid ${
+                    selectedPlan === 'annual'
+                      ? '#4E1A3E'
+                      : theme.colors.plansCard
+                  }`,
                 }}
                 component={FormControlLabel}
                 value="annual"
@@ -58,7 +68,14 @@ function SubscriptionPlanForm() {
             <Grid item xs={12} md={6}>
               <Paper
                 sx={{
-                  width: '100%', padding: '16px', backgroundColor: theme.colors.plansCard, border: `3px solid ${selectedPlan === 'monthly' ? '#4E1A3E' : theme.colors.plansCard}`,
+                  width: '100%',
+                  padding: '16px',
+                  backgroundColor: theme.colors.plansCard,
+                  border: `3px solid ${
+                    selectedPlan === 'monthly'
+                      ? '#4E1A3E'
+                      : theme.colors.plansCard
+                  }`,
                 }}
                 component={FormControlLabel}
                 value="monthly"

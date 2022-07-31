@@ -1,4 +1,4 @@
-import { Container } from '@mui/material';
+import Container from '@mui/material/Container';
 import React from 'react';
 import AlVinhoBot from '../../components/chatBot';
 import Divider from '../../components/Divider';

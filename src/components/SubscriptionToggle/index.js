@@ -1,4 +1,5 @@
-import { Grid, ToggleButton } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import ToggleButton from '@mui/material/ToggleButton';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import PlanCard from '../PlanCard';

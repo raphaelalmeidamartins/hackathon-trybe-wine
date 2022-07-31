@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { ToggleButtonGroup } from '@mui/material';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 export default styled(ToggleButtonGroup)`
   display: flex;

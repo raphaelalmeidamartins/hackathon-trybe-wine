@@ -1,9 +1,7 @@
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 import React from 'react';
-import {
-  Container,
-  Box,
-  Grid,
-} from '@mui/material';
 import { useSelector } from 'react-redux';
 import toast from './utils/images/toast.svg';
 

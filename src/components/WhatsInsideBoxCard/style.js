@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
 
 export const CardContainer = styled(Grid)`

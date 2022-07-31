@@ -1,4 +1,6 @@
-import { Container, Grid, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 import useTheme from '@mui/material/styles/useTheme';
 import PropTypes from 'prop-types';
 import React from 'react';

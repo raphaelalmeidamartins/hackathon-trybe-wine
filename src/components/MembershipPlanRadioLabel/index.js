@@ -1,4 +1,6 @@
-import { Box, Chip, Grid } from '@mui/material';
+import Box from '@mui/material/Box';
+import Chip from '@mui/material/Chip';
+import Grid from '@mui/material/Grid';
 import PropTypes from 'prop-types';
 import React from 'react';
 import RadioLabelGrid from './style';

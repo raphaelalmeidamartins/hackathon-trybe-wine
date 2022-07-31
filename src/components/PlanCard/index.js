@@ -1,6 +1,7 @@
-import {
-  Box, Button, Chip, Grid,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Chip from '@mui/material/Chip';
+import Grid from '@mui/material/Grid';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { TbGift } from 'react-icons/tb';

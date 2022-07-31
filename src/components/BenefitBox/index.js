@@ -1,5 +1,7 @@
-import { Grid, Paper, Typography } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
 import useTheme from '@mui/material/styles/useTheme';
+import { Typography } from '@mui/material';
 import PropTypes from 'prop-types';
 import React from 'react';
 import useElevation from '../../hooks/useElevation';

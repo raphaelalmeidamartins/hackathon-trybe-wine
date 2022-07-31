@@ -1,8 +1,9 @@
-import {
-  Container,
-  FormControlLabel, Grid, MenuItem, Switch,
-  TextField,
-} from '@mui/material';
+import Container from '@mui/material/Container';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Grid from '@mui/material/Grid';
+import MenuItem from '@mui/material/MenuItem';
+import Switch from '@mui/material/Switch';
+import TextField from '@mui/material/TextField';
 import React, { useState } from 'react';
 import { IoLocationOutline } from 'react-icons/io5';
 import { useDispatch } from 'react-redux';

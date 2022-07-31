@@ -1,4 +1,6 @@
-import { Button, Container, Grid } from '@mui/material';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
