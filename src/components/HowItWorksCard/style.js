@@ -49,7 +49,7 @@ const HowItWorksLine = styled.div`
 
 const HowItWorksCardTextContainer = styled(Grid)`
   align-items: center;
-  padding: 16px;
+  padding: 20px;
   min-height: 200px;
 `;
 
