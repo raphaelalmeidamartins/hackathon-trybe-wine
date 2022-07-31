@@ -1,171 +1,184 @@
-### Termos de uso
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
+<h1 align="center"> 📦🍷 Wine Landing Page Hackathon 🍷📦 </h1>
 
----
+<div align="center">
 
-# Boas vindas ao repositório do Hackathon t19!
+![Preview](./preview.gif)
 
-Nós já estamos habituados e habituadas a utilizar o GItHub quase que diariamente, então não esperamos muitas novidades por aqui!
+</div>
 
----
+## 📓 Descrição
 
-# Sumário
+  Este projeto foi feito com base no case fornecido pela empresa [Wine](https://www.wine.com.br/clubewine/), para que seja desenvolvida uma solução para sua Landing page.
 
-- [Entregáveis](#entregáveis)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Protótipo do projeto](#protótipo-do-projeto)
-  - [Data de entrega](#data-de-entrega)
+<details>
+  <summary>Sobre o desenvolvimento</summary>
+  <br />
 
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
+  Para o desenvolvimento do projeto, utilizamos as API's fornecidas pela empresa [Wine](https://www.wine.com.br/clubewine/) onde fizemos um requisição to GET para consumir os dados da API.
+  Tivemos o desafio de procura novas formas de transformar a experiencia do usuario ao acessar a plataforma da Wine para consumir os produtos.
+  E a partir do contexto que nos foi fornecido pela empresa também uma nova forma de aproximar o cliente do produto.
 
-- [Como desenvolver](#como-desenvolver)
-  - [APIs](#apis)
+  <br />
+</details>
+  <br />
 
-# Entregáveis
+### Habilidades e Tecnologias 💻
 
-Para desenvolver este projeto, esperamos que vocês criem uma branch principal para o grupo, e abram um Pull Request neste repositório a partir dela.
+<details>
+  <summary> 🦾 Habilidades</summary>
+  <br />
 
-Sugerimos que inclua o número ou nome do grupo no nome da branch, para facilitar identificação. Exemplo: "grupo-1-branch-main".
+* Trabalho em equipe
+* Desenvolvimento de aplicações React
+* Consumo de APIs REST
+* Desenvolvimento de Landing Page
+* Criatividade
+* Metodologia ágil (Scrum) (Kanban)
 
+  <br />
 
-## O que deverá ser desenvolvido
+</details>
 
-A proposta do case é criar uma landing page para a Wine, seguindo os seguintes critérios:
+<details>
+  <summary> 🖥️ Tecnologias</summary>
+  <br />
 
-A landing page não pode ser idêntica a da Wine, podendo utilizar elementos de estilo como inspiração.
-Consumir alguma das APIs disponibilizada pela Wine.
+* React
+  * React Hooks
+  * React Router
+* Redux
+  * Redux Toolkit
+  * Redux Thunk
+* HTML5
+* CSS3
+* Styled-Components
+* Material-UI
+* JavaScript
 
-### Protótipo do projeto
+  <br />
 
-Você pode acessar um protótipo no link abaixo:
+</details>
+
+  <br />
+
+### 📚 Documentação 📚
+
+  <details>
+    <summary> 🚀 Rodando o projeto</summary>
+    <br />
+
+* Faça o fork do repositório:
+      Tutorial [AQUI](https://github.com/UNIVALI-LITE/Portugol-Studio/wiki/Fazendo-um-Fork-do-reposit%C3%B3rio)
+* Abra seu terminal e navegue até a pasta onde preferir alocar o projeto.
+
+* Clone o repositório:
 
-https://www.figma.com/file/nR5KNXQfO7z312s4Y9zh6D/07%2F12---Wine-Test---WEB?node-id=136%3A1483
+    ```sh
+      git clone git@github.com:"SeuNomeNoGitHub"/hackathon-t19-wine.git
+    ```
+
+* Apos ter o repositório clonado em sua maquina, execute este comando para acessar a parta do projeto:
+
+    ```sh
+      cd hackathon-t19-wine
+    ```
 
+* Dentro da pasta do projeto, execute o comando abaixo para instalar as dependências do projeto:
 
-### Data de entrega
+    Caso utilize o npm:
 
-- Data para entrega será no domingo (31/07) até as 12horas.
+    ```sh
+      npm install
+    ```
 
----
+    Caso utilize o yarn:
 
-# Instruções para entregar seu projeto
+    ```sh
+      yarn install
+    ```
 
-### Antes de começar a desenvolver:
-
-1. Faça um clone do projeto: `git clone git@github.com:tryber/hackathon-t19-wine.git`
-
-2. Crie uma branch principal para o grupo, a partir da main: `git checkout -b "nome-da-branch"`.
-
- * Sugerimos a utilização do nome ou número do grupo na branch principal para facilitar a identificação.
-
-3. Faça alterações separadas por novas branchs criadas a partir da branch `branch-main-do-grupo`, criando uma nova branch para cada demanda
-  * Verifique que você está na branch `branch-main-do-grupo`
-    * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `branch-main-do-grupo`
-    * Exemplo: `git checkout branch-main-do-grupo && git pull`
-  * Agora, crie uma branch para a demanda que você vai desenvolver do seu projeto
-    * Você deve criar uma branch com uma breve descrição da demanda a ser desenvolvida
-    * Exemplo: `git checkout -b branch-main-do-grupo-cria-campo-de-input`
-
-4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-  * Verifique que as mudanças ainda não estão no _stage_
-    * Exemplo: `git status` (devem aparecer listadas as novas alterações em vermelho)
-  * Adicione o arquivo alterado ao _stage_ do Git
-      * Exemplo:
-        * `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-        * `git status` (devem aparecer listadas as novas alterações em verde)
-  * Faça seus `commit`
-      * Exemplo:
-        * `git commit -m 'cria componente de input`
-        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin branch-main-do-grupo-cria-campo-de-input`
-
-6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/hackathon-t19-wine/pulls)
-  * Clique no botão verde _"New pull request"_
-  * Clique na caixa de seleção _"Compare"_ e escolha a branch do grupo, `branch-main-do-grupo`, e a sua branch **com atenção**
-  * Coloque um título para a sua _Pull Request_
-    * Exemplo: _"[GRUPO XX] Cria tela de busca"_
-  * Clique no botão verde _"Create pull request"_
-  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-  * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/hackathon-t19-wine/pulls) e confira que o seu _Pull Request_ está criado
-
-7. Assim que aprovado por pelo menos duas pessoas do seu grupo e o _Linter_ estiver adereçado, acesse **SEU** _Pull Request_ e clique no botão _"Merge pull request"_
-
-### Durante o desenvolvimento
-
-* Faça `commits` das alterações que você fizer no código regularmente
-
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-* Os comandos que você utilizará com mais frequência são:
-
-1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-
-2. `git add` _(para adicionar arquivos ao stage do Git)_
-
-3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-
-4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-
-        * `git commit -m 'cria componente de input`
-        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin branch-main-do-grupo-cria-campo-de-input`
-
-6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/hackathon-t19-wine/pulls)
-  * Clique no botão verde _"New pull request"_
-  * Clique na caixa de seleção _"Compare"_ e escolha a branch do grupo, `branch-main-do-grupo`, e a sua branch **com atenção**
-  * Coloque um título para a sua _Pull Request_
-    * Exemplo: _"[branch-main-do-grupo] Cria tela de busca"_
-  * Clique no botão verde _"Create pull request"_
-  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-  * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/hackathon-t19-wine/pulls) e confira que o seu _Pull Request_ está criado
-
-### Durante o desenvolvimento
-
-* Faça `commits` das alterações que você fizer no código regularmente
-
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-* Os comandos que você utilizará com mais frequência são:
-
-1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-
-2. `git add` _(para adicionar arquivos ao stage do Git)_
-
-3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-
-4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-
-5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
----
-
-# Como desenvolver
-
-Este repositório não conta com branches para cada grupo, então cada um será responsável por criar a branch principal do grupo e abrir o Pull Request a partir dela.
-
-Recomendamos que utilize o nome ou número do grupo na branch, para facilitar a identificação dos responsáveis. Exemplo: "grupo-1-hackathon".
-
-
-## APIs
-
-Neste link você encontra a documentação da API de produtos, junto com sugestões de sua utilização!
-
-Para adequar ao JavaScript, basta selecionar a linguagem JavaScript-Fetch no canto superior.
-https://documenter.getpostman.com/view/10015622/UVJiiuHi#fe849253-c47a-492f-a860-08350296c570
-
-Link direto para a API: https://wine-back-test.herokuapp.com/products?page=1&limit=10
-
-Para a API de modalidades, o link direto: https://wine-club-proxy.herokuapp.com/modalities
-
-##teste
+* Dentro da pasta do projeto, execute o comando abaixo para iniciar o servidor do projeto:
+
+    Caso utilize o npm:
+
+    ```sh
+      npm start
+    ```
+
+    Caso utilize o yarn:
+
+    ```sh
+      yarn start
+    ```
+
+  O aplicativo sera executado em modo de desenvolvimento.
+  Abrindo na porta padrão que o React usa: <http://localhost:3000/> em seu navegador.
+
+  </details>
+<br />
+
+### 🤝 Colaboradores 💻
+
+<br />
+<table>
+  <tr>
+      <td align="center">
+      <a href="https://github.com/erik-efl">
+        <img src="https://avatars.githubusercontent.com/u/56979306?s=400&u=526ff856d28fc3ce1926f51be6aa1f947156b8bb&v=4" width="100px;" alt="Foto de Erik Ferreida de Lima"/><br>
+        <sub>
+          <b>Erik Lima</b>
+        </sub>
+      </a>
+    </td>
+      <td align="center">
+      <a href="https://github.com/GabrielPesch">
+        <img src="https://avatars.githubusercontent.com/u/91437516?v=4" width="100px;" alt="Foto de Tati Alves no GitHub"/><br>
+        <sub>
+          <b>GabrielPesch</b>
+        </sub>
+      </a>
+    </td>
+        <td align="center">
+      <a href="https://github.com/lalanametala">
+        <img src="https://avatars.githubusercontent.com/u/84039617?v=4" width="100px;" alt="Foto de Tati Alves no GitHub"/><br>
+        <sub>
+          <b>Lais Nametala</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/luacomacento">
+        <img src="https://avatars.githubusercontent.com/u/71564550?v=4" width="100px;" alt="Foto de Tati Alves no GitHub"/><br>
+        <sub>
+          <b>Luá Octaviano</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/raphaelalmeidamartins">
+        <img src="https://avatars.githubusercontent.com/u/64360469?v=4" width="100px;" alt="Foto de Tati Alves no GitHub"/><br>
+        <sub>
+          <b>Raphael Almeida Martins</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+##
+
+## ⚙️ Status do Projeto 🛠️
+
+  ```js
+    let projeto {
+      "status": "Em desenvolvimento"
+    }
+  ```
+##
+
+### ©️ Aviso de direitos autorais
+
+Desenvolvido para propósitos de aprendizagem, todo o código e documentação são de autoria dos colaboradores deste repositório, logo os direitos ao código e ideias desenvolvidas pertencem exclusivamente a eles. É permitido baixar ou clonar o repositório para fins de estudo. Contudo, não é permitido publicar cópias totais ou parciais. Este aviso não cobre bibliotecas, dependências, API's, imagens e produtos estas estão sujeitas a suas respectivas licenças.

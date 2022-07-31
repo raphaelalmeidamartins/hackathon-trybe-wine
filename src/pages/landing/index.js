@@ -1,13 +1,31 @@
+import { Container } from '@mui/material';
 import React from 'react';
+import AlVinhoBot from '../../components/chatBot';
+import Divider from '../../components/Divider';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import Banner from './sections/Banner';
+import Benefits from './sections/Benefits';
+import HowItWorks from './sections/HowItWorks';
+import Plans from './sections/Plans';
+import WhatsInsideYourBox from './sections/WhatsInsideYourBox';
 
 function Landing() {
   return (
     <>
-      {/* Header */}
+      <Header />
+      <Banner />
       <main>
-        {/* Aqui colocar as sections */}
+        <Container>
+          <HowItWorks />
+          <AlVinhoBot />
+          <WhatsInsideYourBox />
+        </Container>
+        <Benefits headingToggle />
+        <Plans />
       </main>
-      {/* Aqui colocar um footer */}
+      <Divider />
+      <Footer />
     </>
   );
 }
