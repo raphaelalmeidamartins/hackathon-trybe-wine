@@ -208,6 +208,27 @@ const answers = [
     message: 'Recomenda-se o espumante pois é leve e possui acentuado frescor,pois esses petiscos são caracterizados pela concentração elevada de gordura.',
     trigger: 'sparkling-wine',
   },
+  {
+    id: 'meat',
+    options: [
+      { value: 1, label: 'Carne vermelha', trigger: 'red-meat' },
+      { value: 2, label: 'Carne branca', trigger: 'white-meat' },
+    ],
+  },
+  {
+    id: 'red-meat',
+    message: 'Pode-se escolher um vinho mais “pesado”, como um tinto mais encorpado.',
+    trigger: 'red-wine',
+  },
+  {
+    id: 'white-meat',
+    message: 'o ideal é optar por um vinho tinto jovem ou vinho branco seco. Considera-se vinho tinto jovem aquele que passa a ser consumido entre 3 a 4 anos após a safra.',
+    trigger: 'red-white-wine',
+  },
+  {
+    id: 'red-white-wine',
+    component: (<Button component="a" href="https://www.wine.com.br/browse.ep?cID=100851&exibirEsgotados=false&listagem=horizontal&sorter=featuredProducts-desc&filters=cVINHOS%20atTIPO_TINTO,atTIPO_BRANCO">Encontrar vinhos licorosos</Button>),
+  },
     end: true,
   },
   {
