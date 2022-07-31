@@ -11,7 +11,9 @@ import {
   TextField as Input,
   Grid,
 } from '@mui/material';
+import { useDispatch } from 'react-redux';
 import brStates from './utils/helpers';
+import { setAddress } from '../../../../store/checkout';
 
 function AddressForm() {
   const [addressForm, setAddressForm] = useState({
@@ -28,12 +30,16 @@ function AddressForm() {
     concierge: false,
   });
 
+  const dispatch = useDispatch();
+
   const handleChange = ({ target: { name, value } }) => {
     if (name === 'concierge') {
       const concierge = !addressForm.concierge;
       setAddressForm({ ...addressForm, concierge });
+      dispatch(setAddress({ ...addressForm, concierge }));
     } else {
       setAddressForm({ ...addressForm, [name]: value });
+      dispatch(setAddress({ ...addressForm, [name]: value }));
     }
   };
 
