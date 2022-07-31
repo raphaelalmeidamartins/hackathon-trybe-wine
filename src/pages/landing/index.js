@@ -7,6 +7,7 @@ import Benefits from './sections/Benefits';
 import HowItWorks from './sections/HowItWorks';
 import Plans from './sections/Plans';
 import WhatsInsideYourBox from './sections/WhatsInsideYourBox';
+import AlVinhoBot from '../../components/chatBot';
 
 function Landing() {
   return (
@@ -15,6 +16,7 @@ function Landing() {
       <Banner />
       <Container component="main">
         <HowItWorks />
+        <AlVinhoBot />
         <WhatsInsideYourBox />
         <Plans />
         <Benefits />

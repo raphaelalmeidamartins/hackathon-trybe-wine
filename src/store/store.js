@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
+import checkoutReducer from './checkout';
 import subscriptionReducer from './subscription';
 
 const store = configureStore({
   reducer: {
-    // stock: stockReducer,
+    checkout: checkoutReducer,
     subscription: subscriptionReducer,
   },
 });
