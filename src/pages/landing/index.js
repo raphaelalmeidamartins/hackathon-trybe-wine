@@ -1,9 +1,11 @@
+import { Container } from '@mui/material';
 import React from 'react';
-import Plans from './sections/Plans';
 import Footer from '../../components/Footer';
-import Benefits from './sections/Benefits';
 import Header from '../../components/Header';
+import Banner from './sections/Banner';
+import Benefits from './sections/Benefits';
 import HowItWorks from './sections/HowItWorks';
+import Plans from './sections/Plans';
 import WhatsInsideYourBox from './sections/WhatsInsideYourBox';
 import AlVinhoBot from '../../components/chatBot';
 
@@ -11,11 +13,14 @@ function Landing() {
   return (
     <>
       <Header />
-      <main>
+      <Banner />
+      <Container component="main">
         <HowItWorks />
         <AlVinhoBot />
         <WhatsInsideYourBox />
         <Plans />
+        <Benefits />
+      </Container>
         <Benefits headingToggle />
       </main>
       <Footer />

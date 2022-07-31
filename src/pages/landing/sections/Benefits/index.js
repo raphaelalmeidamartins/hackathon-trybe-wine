@@ -12,7 +12,7 @@ function Benefits({ headingToggle }) {
         : (<h2>Seus benefícios de pessoa Sócia Wine</h2>)}
       <Grid container columns={{ xs: 4, sm: 8, md: 12 }}>
         {benefits.map(({ pContent, imgAlt, imgSrc }) => (
-          <Grid item xs={4} sm={2} md={3}>
+          <Grid key={pContent} item xs={4} sm={2} md={3}>
             <BenefitBox pContent={pContent} imgAlt={imgAlt} imgSrc={imgSrc} />
           </Grid>
         ))}

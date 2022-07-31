@@ -72,7 +72,9 @@ function Header() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuHambugerIcon />
+              <SvgIcon>
+                <MenuHambugerIcon />
+              </SvgIcon>
             </IconButton>
             <Drawer
               variant="temporary"
@@ -87,7 +89,12 @@ function Header() {
             >
               {navLinks.map(({ name, href }) => (
                 <MenuItem key={href} onClick={handleCloseNavMenu}>
-                  <Button variant="text" component="a" href={href} sx={{ justifyContent: 'flex-start' }}>
+                  <Button
+                    variant="text"
+                    component="a"
+                    href={href}
+                    sx={{ justifyContent: 'flex-start' }}
+                  >
                     {name}
                   </Button>
                 </MenuItem>
