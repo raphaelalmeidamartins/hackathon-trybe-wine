@@ -7,11 +7,21 @@ import wineBottles from './images/wineBottles.png';
 
 function WhatsInsideYourBox() {
   return (
-    <section style={{ marginBottom: '32px' }}>
-      <Typography variant="h3" align="center" component="h2" gutterBottom>
+    <section>
+      <Typography
+        variant="h4"
+        align="center"
+        component="h2"
+        gutterBottom
+        sx={{ fontFamily: '"Sniglet", cursive', fontWeight: 700 }}
+      >
         O que vai dentro da sua WineBox?
       </Typography>
-      <Grid container columns={{ xs: 4, sm: 6, md: 12 }}>
+      <Grid
+        container
+        columns={{ xs: 4, sm: 6, md: 12 }}
+        sx={{ marginTop: '48px' }}
+      >
         <Grid item xs={4} sm={2} md={4}>
           <WhatsInsideBoxCard
             cardImage={wineBottles}

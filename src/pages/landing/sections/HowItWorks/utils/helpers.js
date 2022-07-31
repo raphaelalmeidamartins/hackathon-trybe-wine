@@ -1,8 +1,8 @@
 import React from 'react';
-import icon1 from './images/icon-01.webp';
-import icon2 from './images/icon-02.webp';
-import icon3 from './images/icon-03.webp';
-import icon4 from './images/icon-04.webp';
+import icon1 from './images/icon-01.svg';
+import icon2 from './images/icon-02.svg';
+import icon3 from './images/icon-03.svg';
+import icon4 from './images/icon-04.svg';
 import { HowItWorksLine } from '../../../../../components/HowItWorksCard/style';
 
 const steps = [

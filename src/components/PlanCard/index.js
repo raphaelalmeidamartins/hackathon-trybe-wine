@@ -38,7 +38,7 @@ function PlanCard({ selectedPlan }) {
             <span>Plano</span>
             <h2>{selectedPlan.name.split(' ')[1].toUpperCase()}</h2>
           </div>
-          <Chip color="secondary" label={selectedPlan.promotion} sx={{ fontWeight: 700 }} />
+          <Chip color="secondary" size="small" label={selectedPlan.promotion} sx={{ fontWeight: 700 }} />
         </Box>
         <p className="price">
           {'de '}

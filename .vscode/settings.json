@@ -5,5 +5,13 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "conventionalCommits.scopes": ["howItWorks", "howItWorks/icons", "README.md"]
+  "conventionalCommits.scopes": [
+    "howItWorks",
+    "howItWorks/icons",
+    "README.md"
+  ],
+  "cSpell.words": [
+    "headlessui",
+    "Neue"
+  ]
 }

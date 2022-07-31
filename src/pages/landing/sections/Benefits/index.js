@@ -11,27 +11,21 @@ function Benefits({ headingToggle }) {
     }}
     >
       <Container>
-        {headingToggle ? (
-          <Typography
-            variant="h4"
-            component="h1"
-            align="center"
-            gutterBottom
-            sx={{ marginBottom: '24px' }}
-          >
-            Como Sócio Wine você garante benefícios exclusivos
-          </Typography>
-        ) : (
-          <Typography
-            variant="h4"
-            component="h1"
-            align="center"
-            gutterBottom
-            sx={{ marginBottom: '24px' }}
-          >
-            Seus benefícios de pessoa Sócia Wine
-          </Typography>
-        )}
+        <Typography
+          variant="h4"
+          component="h2"
+          align="center"
+          gutterBottom
+          sx={{
+            fontFamily: '"Sniglet", cursive',
+            fontWeight: 700,
+            marginBottom: '48px',
+          }}
+        >
+          {headingToggle
+            ? 'Como Sócio Wine você garante benefícios exclusivos'
+            : 'Seus benefícios de pessoa Sócia Wine'}
+        </Typography>
         <Grid
           container
           columns={{ xs: 4, sm: 8, md: 12 }}

@@ -20,7 +20,6 @@ const theme = createTheme({
       hint: 'rgba(57, 19, 6, 0.7)',
     },
     background: {
-      // default: '#CFEED1',
       default: '#FCFCFC',
       paper: '#F7BEC0',
     },
@@ -34,6 +33,10 @@ const theme = createTheme({
     babyPink: '#d6a9d4',
     burnetOrange: '#8a2503',
     burnetSienna: '#D48C70',
+    lightIndigo: '#d9dffc',
+  },
+  typography: {
+    fontFamily: '"Quicksand", "Helvetica", "Arial", sans-serif',
   },
 });
 
