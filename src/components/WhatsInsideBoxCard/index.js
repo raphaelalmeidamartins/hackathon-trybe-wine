@@ -1,6 +1,6 @@
+import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import useTheme from '@mui/material/styles/useTheme';
-import { Typography } from '@mui/material';
 import PropTypes from 'prop-types';
 import React from 'react';
 import {
@@ -35,7 +35,7 @@ function WhatsInsideBoxCard({
               fontWeight: 600,
               color: theme.colors.burnetOrange,
               textAlign: {
-                xs: 'center',
+                xs: 'left',
                 md: 'left',
               },
             }}
@@ -46,10 +46,7 @@ function WhatsInsideBoxCard({
             variant="body2"
             paragraph
             sx={{
-              textAlign: {
-                xs: 'center',
-                md: 'left',
-              },
+              textAlign: 'left',
             }}
           >
             {content}
