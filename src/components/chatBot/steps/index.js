@@ -6,7 +6,7 @@ import ChatBotContainer from '../styles/components';
 const answers = [
   {
     id: 'greeting-1',
-    message: 'Olá! me chamo Alvinho e serei seu Sommelier virtual!',
+    message: 'Olá! Me chamo Alvinho e serei seu Sommelier virtual!',
     trigger: 'greeting-2',
   },
   {
@@ -21,12 +21,12 @@ const answers = [
   },
   {
     id: 'greeting-4',
-    message: 'Oi {previousValue}, Como vai você!? Prazer em te conhecer!',
+    message: 'Oi, {previousValue}. Como vai você? Prazer em te conhecer!',
     trigger: 'greeting-5',
   },
   {
     id: 'greeting-5',
-    message: 'Como posso ajudar!? Você gostaria de saber mais sobre vinhos ou uma de nossas assinaturas?',
+    message: 'Como posso ajudar? Você gostaria de saber mais sobre vinhos ou uma de nossas assinaturas?',
     trigger: 'options',
   },
   {
@@ -172,10 +172,10 @@ const answers = [
   {
     id: 'wine-by-side2',
     message: 'Você deseja encontrar um vinho que combine com qual entrada ou prato principal?',
-    trigger: 'wine-type-options',
+    trigger: 'wine-dish-options',
   },
   {
-    id: 'wine-type-options',
+    id: 'wine-dish-options',
     options: [
       { value: 1, label: 'petisco', trigger: 'sidedishes' },
       { value: 2, label: 'carnes', trigger: 'meat' },
