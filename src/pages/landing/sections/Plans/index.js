@@ -14,7 +14,6 @@ function Plans() {
   const dispatch = useDispatch();
   const subscription = useSelector((state) => state.subscription);
   const { colors: { gradient } } = useTheme();
-  console.log(gradient);
 
   useEffect(() => {
     dispatch(fetchSubscriptionData());
