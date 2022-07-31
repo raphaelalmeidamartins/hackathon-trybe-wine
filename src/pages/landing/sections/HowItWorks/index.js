@@ -1,4 +1,4 @@
-import { Container, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import * as React from 'react';
 import HowItWorksCard from '../../../../components/HowItWorksCard';
 import StepsGrid from './style';
@@ -6,8 +6,8 @@ import steps from './utils/helpers';
 
 export default function HowItWorks() {
   return (
-    <Container component="section" sx={{ margin: '48px 0' }}>
-      <Typography variant="h3" element="h1" align="center" gutterBottom>
+    <section style={{ margin: '48px 0' }}>
+      <Typography variant="h3" component="h1" align="center" gutterBottom>
         Entenda como funciona
       </Typography>
       <Typography align="center" paragraph>
@@ -31,6 +31,6 @@ export default function HowItWorks() {
           />
         ))}
       </StepsGrid>
-    </Container>
+    </section>
   );
 }

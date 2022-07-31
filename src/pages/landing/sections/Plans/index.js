@@ -1,4 +1,4 @@
-import { Container, Grid, Hidden } from '@mui/material';
+import { Grid, Hidden } from '@mui/material';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PlanCard from '../../../../components/PlanCard';
@@ -17,7 +17,7 @@ function Plans() {
 
   return (
     <PlansContainerBox>
-      <Container component="section">
+      <section>
         {subscription?.plans && (
         <Grid container justifyContent="center" columns={{ xs: 4, sm: 8, md: 12 }}>
           <Grid item xs={2} sm={3} md={5}>
@@ -48,7 +48,7 @@ function Plans() {
           )}
         </Grid>
         )}
-      </Container>
+      </section>
     </PlansContainerBox>
   );
 }
