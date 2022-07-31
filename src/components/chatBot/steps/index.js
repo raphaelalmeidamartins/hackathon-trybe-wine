@@ -229,6 +229,24 @@ const answers = [
     id: 'red-white-wine',
     component: (<Button component="a" href="https://www.wine.com.br/browse.ep?cID=100851&exibirEsgotados=false&listagem=horizontal&sorter=featuredProducts-desc&filters=cVINHOS%20atTIPO_TINTO,atTIPO_BRANCO">Encontrar vinhos licorosos</Button>),
   },
+  {
+    id: 'fish',
+    options: [
+      { value: 1, label: 'Assados na grelha', trigger: 'light-fish' },
+      { value: 2, label: 'Com molhos leves', trigger: 'light-fish' },
+      { value: 3, label: 'Molhos pesados', trigger: 'heavy-fish' },
+    ],
+  },
+  {
+    id: 'light-fish',
+    message: 'Para peixes assados na grelha e seguidos de molhos leves, os vinhos brancos secos frutados e jovens são uma boa opção pois possuem menos de 15 gramas de açúcar residual por litro',
+    trigger: 'white-wine',
+  },
+  {
+    id: 'heavy-fish',
+    message: 'Os peixes acompanhados por molhos mais fortes harmonizam melhor com vinho tinto jovem ou com vinho branco maduro.',
+    trigger: 'red-wine',
+  },
     end: true,
   },
   {
