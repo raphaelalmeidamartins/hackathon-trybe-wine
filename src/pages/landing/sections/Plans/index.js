@@ -35,7 +35,7 @@ function Plans() {
               <Grid container spacing={4}>
                 {subscription.plans.map((plan) => (
                   <Grid item key={plan.name} sm={6} md={5}>
-                    <PlanCard selectedPlan={plan} showTitle />
+                    <PlanCard selectedPlan={plan} />
                   </Grid>
                 ))}
               </Grid>

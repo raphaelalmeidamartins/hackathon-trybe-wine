@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import { TbGift } from 'react-icons/tb';
 import PlanCardPaper from './style';
 
-function PlanCard({ selectedPlan, showTitle }) {
+function PlanCard({ selectedPlan }) {
   const [elevation, setElevation] = useState(2);
 
   const handleMouseOver = () => {
@@ -24,15 +24,13 @@ function PlanCard({ selectedPlan, showTitle }) {
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
-        {showTitle && (
-          <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-            <div>
-              <span>Plano</span>
-              <h3>{selectedPlan.name.split(' ')[1].toUpperCase()}</h3>
-            </div>
-            <Chip color="secondary" label={selectedPlan.promotion} />
-          </Box>
-        )}
+        <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div>
+            <span>Plano</span>
+            <h3>{selectedPlan.name.split(' ')[1].toUpperCase()}</h3>
+          </div>
+          <Chip color="secondary" label={selectedPlan.promotion} />
+        </Box>
         <p className="price">
           {'de '}
           <span style={{ textDecoration: 'line-through' }}>
@@ -61,10 +59,6 @@ function PlanCard({ selectedPlan, showTitle }) {
   );
 }
 
-PlanCard.defaultProps = {
-  showTitle: false,
-};
-
 PlanCard.propTypes = {
   selectedPlan: PropTypes.shape({
     name: PropTypes.string,
@@ -73,7 +67,6 @@ PlanCard.propTypes = {
     priceWithDiscount: PropTypes.number,
     gift: PropTypes.string,
   }).isRequired,
-  showTitle: PropTypes.bool,
 };
 
 export default PlanCard;
