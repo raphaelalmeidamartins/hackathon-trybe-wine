@@ -7,7 +7,13 @@ import steps from './utils/helpers';
 export default function HowItWorks() {
   return (
     <section style={{ margin: '48px 0' }}>
-      <Typography variant="h3" component="h1" align="center" gutterBottom>
+      <Typography
+        variant="h4"
+        component="h2"
+        align="center"
+        gutterBottom
+        sx={{ fontFamily: '"Sniglet", cursive', fontWeight: 700 }}
+      >
         Entenda como funciona
       </Typography>
       <Typography align="center" paragraph>
