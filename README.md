@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<img src="./imgs/queryBox.png" width="50%" >
+![Preview](./preview.gif)
 
 </div>
 
