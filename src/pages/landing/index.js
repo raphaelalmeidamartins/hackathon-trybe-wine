@@ -16,7 +16,7 @@ function Landing() {
         <AlVinhoBot />
         <WhatsInsideYourBox />
         <Plans />
-        <Benefits />
+        <Benefits headingToggle />
       </main>
       <Footer />
     </>
