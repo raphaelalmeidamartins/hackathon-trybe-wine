@@ -14,8 +14,8 @@ export default styled(Paper)`
   }
 
   .price {
+    font-style: italic;
     margin-bottom: 0;
-    color: grey;
   }
 
   .price-with-discount {

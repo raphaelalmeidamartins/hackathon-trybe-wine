@@ -1,16 +1,18 @@
-import React from 'react';
+import { Grid, Typography } from '@mui/material';
 import PropTypes from 'prop-types';
-import { Grid } from '@mui/material';
-import
-{
+import React from 'react';
+import {
   CardContainer,
   ImageContainer,
   TextContainer,
 } from './style';
+import theme from '../../styles/theme';
 
 function WhatsInsideBoxCard({
   cardImage, cardTitle, content, imgDescription,
 }) {
+  const { colors } = theme;
+
   return (
     <Grid component="section" container columns={{ xs: 2, sm: 12, md: 4 }}>
       <CardContainer container columns={{ xs: 12, sm: 4, md: 12 }}>
@@ -32,7 +34,14 @@ function WhatsInsideBoxCard({
             },
           }}
         >
-          <h3>{cardTitle}</h3>
+          <Typography
+            variant="h6"
+            component="h4"
+            gutterBottom
+            sx={{ fontWeight: 600, color: colors.burnetOrange }}
+          >
+            {cardTitle}
+          </Typography>
           <p>{content}</p>
         </TextContainer>
       </CardContainer>

@@ -15,13 +15,15 @@ function Landing() {
     <>
       <Header />
       <Banner />
-      <Container component="main">
-        <HowItWorks />
-        <AlVinhoBot />
-        <WhatsInsideYourBox />
+      <main>
+        <Container>
+          <HowItWorks />
+          <AlVinhoBot />
+          <WhatsInsideYourBox />
+        </Container>
         <Benefits headingToggle />
         <Plans />
-      </Container>
+      </main>
       <Divider />
       <Footer />
     </>

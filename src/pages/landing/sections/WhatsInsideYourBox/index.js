@@ -8,7 +8,7 @@ import wineBottles from './images/wineBottles.png';
 function WhatsInsideYourBox() {
   return (
     <section>
-      <Typography variant="h5" align="center" component="h3" gutterBottom>
+      <Typography variant="h3" align="center" component="h2" gutterBottom>
         O que vai dentro da sua WineBox?
       </Typography>
       <Grid container columns={{ xs: 4, sm: 6, md: 12 }}>

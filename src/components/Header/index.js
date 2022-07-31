@@ -101,7 +101,6 @@ function Header() {
                 href={href}
                 sx={{
                   my: 2,
-                  color: 'gray',
                   display: 'block',
                   padding: '0 20px',
                 }}

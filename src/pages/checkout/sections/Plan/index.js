@@ -1,12 +1,15 @@
+import {
+  FormControl,
+  FormControlLabel,
+  Radio,
+  RadioGroup,
+} from '@mui/material';
 import React, { useEffect } from 'react';
 import { FiLayers } from 'react-icons/fi';
-import {
-  Container, FormControl, FormControlLabel, Radio, RadioGroup,
-} from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
-import planInfo from './utils/helpers';
 import MembershipPlanRadioLabel from '../../../../components/MembershipPlanRadioLabel';
 import { setSubscriptionPlan, setTotal } from '../../../../store/checkout';
+import planInfo from './utils/helpers';
 
 function SubscriptionPlanForm() {
   const selectedPlan = useSelector((state) => state.checkout.subscriptionPlan);
@@ -22,7 +25,7 @@ function SubscriptionPlanForm() {
   };
 
   return (
-    <Container component="section" maxWidth="lg">
+    <section>
       <h2>
         <FiLayers />
         {' Plano de pagamento'}
@@ -50,7 +53,7 @@ function SubscriptionPlanForm() {
           />
         </RadioGroup>
       </FormControl>
-    </Container>
+    </section>
   );
 }
 

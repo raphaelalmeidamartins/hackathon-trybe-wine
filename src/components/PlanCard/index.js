@@ -26,7 +26,7 @@ function PlanCard({ selectedPlan }) {
             <span>Plano</span>
             <h2>{selectedPlan.name.split(' ')[1].toUpperCase()}</h2>
           </div>
-          <Chip color="secondary" label={selectedPlan.promotion} />
+          <Chip color="secondary" label={selectedPlan.promotion} sx={{ fontWeight: 700 }} />
         </Box>
         <p className="price">
           {'de '}
@@ -46,6 +46,7 @@ function PlanCard({ selectedPlan }) {
             disabled={!selectedPlan.gift}
             icon={<TbGift sx={{ marginBottom: 4 }} size="1rem" />}
             label={selectedPlan.gift || 'nenhum brinde disponível'}
+            color="primary"
           />
         </Box>
         <Button variant="contained" disableElevation>
