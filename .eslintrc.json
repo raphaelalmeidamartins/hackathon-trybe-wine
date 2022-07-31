@@ -21,6 +21,6 @@
   "rules": {
     "react/jsx-filename-extension": [0],
     "react-hooks/exhaustive-deps": "off",
-    "no-param-reassign": "warn"
+    "no-param-reassign": ["warn", { "props": true, "ignorePropertyModificationsFor": ["state"] }]
   }
 }

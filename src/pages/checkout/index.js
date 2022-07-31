@@ -1,13 +1,18 @@
 import React from 'react';
+import Header from '../../components/Header';
+import SubscriptionPlanForm from './sections/Plan';
 
 function Checkout() {
   return (
     <>
-      {/* Header */}
+      <Header />
+      {' '}
+      <p>{' a '}</p>
+      {' '}
+      <p>{' a '}</p>
       <main>
-        {/* Aqui colocar as sections */}
+        <SubscriptionPlanForm />
       </main>
-      {/* Aqui colocar um footer */}
     </>
   );
 }
