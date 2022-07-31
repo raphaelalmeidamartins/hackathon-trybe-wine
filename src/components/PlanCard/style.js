@@ -9,6 +9,10 @@ export default styled(Paper)`
     text-align: center;
   }
 
+  h2 {
+    margin: 0;
+  }
+
   h3 {
     margin: 0 0 8px
   }

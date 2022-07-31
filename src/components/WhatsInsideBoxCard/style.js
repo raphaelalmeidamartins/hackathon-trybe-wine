@@ -10,7 +10,6 @@ export const CardContainer = styled(Grid)`
 export const ImageContainer = styled(Grid)`
   align-items: flex-start;
   display: flex;
-  height: 200px;
   width: 100%;
   justify-content: center;
   object-fit: contain;
