@@ -1,21 +1,16 @@
-import { Container, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import React from 'react';
 import WhatsInsideBoxCard from '../../../../components/WhatsInsideBoxCard';
-import wineBottles from './images/wineBottles.png';
-import magazine from './images/magazine.png';
 import dropper from './images/dropper.png';
+import magazine from './images/magazine.png';
+import wineBottles from './images/wineBottles.png';
 
 function WhatsInsideYourBox() {
   return (
-    <Container
-      component="section"
-      sx={{
-        marginTop: '30px',
-        marginBotton: '50px',
-        padding: '0 5px',
-      }}
-    >
-      <Typography variant="h5" align="center" component="h3" gutterBottom>O que vai dentro da sua WineBox?</Typography>
+    <section>
+      <Typography variant="h5" align="center" component="h3" gutterBottom>
+        O que vai dentro da sua WineBox?
+      </Typography>
       <Grid container columns={{ xs: 4, sm: 6, md: 12 }}>
         <Grid item xs={4} sm={2} md={4}>
           <WhatsInsideBoxCard
@@ -42,7 +37,7 @@ function WhatsInsideYourBox() {
           />
         </Grid>
       </Grid>
-    </Container>
+    </section>
   );
 }
 
