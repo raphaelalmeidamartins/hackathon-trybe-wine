@@ -39,19 +39,17 @@ export const PopoverButton = styled(Popover.Button)`
   background: ${theme.headerBgColor};
   border: none;
   border-radius: 100%;
-  padding-left: 1.50rem;
-  padding-right: 1.50rem;
+  width: 3.7rem;
   height: 3.7rem;
   display: flex;
   align-items: center;
-  font-size: 28px;
+  font-size: 1.5rem;
   color: ${theme.headerFontColor};
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
-
 `;
 
 export const PopoverPanel = styled(Popover)`
