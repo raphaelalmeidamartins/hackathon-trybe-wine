@@ -34,7 +34,7 @@ function HowItWorksCard({
             },
           }}
         >
-          <Typography variant="h5" align="center" element="h2" gutterBottom>
+          <Typography variant="h5" align="center" component="h2" gutterBottom>
             {title}
           </Typography>
           <Typography align="center" paragraph>
