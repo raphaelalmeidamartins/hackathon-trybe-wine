@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import ChatBotContainer from '../styles/components';
@@ -47,6 +48,25 @@ const answers = [
     end: true,
   },
   {
+    id: 'nationality',
+    message: 'Você prefere encontrar vinhos nacionais ou importados?',
+    trigger: 'wine-by-nationality',
+  },
+  {
+    id: 'wine-by-nationality',
+    options: [
+      { value: 1, label: 'Nacionais', trigger: 'domestic' },
+      { value: 2, label: 'Importados', trigger: 'imported' },
+    ],
+  },
+  {
+    id: 'domestic',
+    component: (<Button component="a" href="https://www.wine.com.br/browse.ep?cID=100851&exibirEsgotados=false&listagem=horizontal&sorter=featuredProducts-desc&filters=cVINHOS%20atPAIS_BRASIL">Encontrar vinhos Nacionais</Button>),
+  },
+  {
+    id: 'imported',
+    component: (<Button component="a" href="https://www.wine.com.br/browse.ep?cID=100851&exibirEsgotados=false&listagem=horizontal&sorter=featuredProducts-desc&filters=cVINHOS%20atPAIS_ARGENTINA,atPAIS_CHILE,atPAIS_PORTUGAL">Encontrar vinhos Importados</Button>),
+  },
     id: 'wine',
     component: (
       <ChatBotContainer>
