@@ -36,7 +36,7 @@ function HowItWorksCard({
           <Typography
             variant="h6"
             align="center"
-            element="h2"
+            component="h2"
             gutterBottom
             sx={{
               fontWeight: 600,

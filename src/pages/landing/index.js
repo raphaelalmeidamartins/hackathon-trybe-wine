@@ -19,7 +19,7 @@ function Landing() {
         <HowItWorks />
         <AlVinhoBot />
         <WhatsInsideYourBox />
-        <Benefits />
+        <Benefits headingToggle />
         <Plans />
       </Container>
       <Divider />

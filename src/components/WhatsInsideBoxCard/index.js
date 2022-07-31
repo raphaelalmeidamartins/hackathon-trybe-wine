@@ -1,19 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid } from '@mui/material';
+import
+{
+  CardContainer,
+  ImageContainer,
+  TextContainer,
+} from './style';
 
 function WhatsInsideBoxCard({
   cardImage, cardTitle, content, imgDescription,
 }) {
   return (
-    <Grid component="section" container columns={{ xs: 4, sm: 6, md: 12 }}>
-      <Grid item xs={4} sm={2} md={4}>
-        <img src={cardImage} alt={imgDescription} />
-      </Grid>
-      <Grid item xs={4} sm={2} md={4}>
-        <h2>{cardTitle}</h2>
-        <p>{content}</p>
-      </Grid>
+    <Grid component="section" container columns={{ xs: 2, sm: 12, md: 4 }}>
+      <CardContainer container columns={{ xs: 12, sm: 4, md: 12 }}>
+        <ImageContainer item xs={3} sm={4} md={4}>
+          <img src={cardImage} alt={imgDescription} />
+        </ImageContainer>
+        <TextContainer
+          item
+          xs={8}
+          sm={4}
+          md={8}
+          spacing={8}
+          sx={{
+            minHeight: {
+              sx: '200px',
+              sm: '400px',
+              md: '300px',
+              lg: '200px',
+              xl: '200px',
+            },
+          }}
+        >
+          <h3>{cardTitle}</h3>
+          <p>{content}</p>
+        </TextContainer>
+      </CardContainer>
     </Grid>
   );
 }
