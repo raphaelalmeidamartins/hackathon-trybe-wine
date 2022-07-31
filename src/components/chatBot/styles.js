@@ -36,7 +36,7 @@ export const ContainerBot = styled.aside`
 `;
 
 export const PopoverButton = styled(Popover.Button)`
-  background: #b6116e;
+  background: ${theme.headerBgColor};
   border: none;
   border-radius: 100%;
   padding-left: 1.50rem;
@@ -45,7 +45,7 @@ export const PopoverButton = styled(Popover.Button)`
   display: flex;
   align-items: center;
   font-size: 28px;
-  color: #fff;
+  color: ${theme.headerFontColor};
   font-weight: bold;
   display: flex;
   align-items: center;
