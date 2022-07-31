@@ -19,6 +19,6 @@ export default styled(Box)`
   }
 
   @media only screen and (min-width: 900px) {
-    box-shadow: inset 0 -156px 0 0 ${(props) => props.theme.palette.background.default};
+    box-shadow: inset 0 -156px 0 0 white};
   }
 `;
