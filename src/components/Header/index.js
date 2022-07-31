@@ -123,8 +123,7 @@ function Header() {
           >
             <IconButton
               size="large"
-              component="a"
-              href=""
+              onClick={() => dispatch(setTheme(theme === 'dark' ? 'light' : 'dark'))}
               sx={{ margin: '0 6px', p: 0 }}
             >
               <SvgIcon>
