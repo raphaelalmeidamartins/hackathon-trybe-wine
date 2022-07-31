@@ -13,7 +13,7 @@
 
   [Clique aqui](https://raphaelmartins.dev/hackathon-trybe-wine/#/) e confira o deploy do projeto no seu navegador.
 
-  Obeservação: o projeto ainda está em desenvolvimento, precisamos corrigir alguns detalhes no CSS
+  Observação: o projeto ainda está em desenvolvimento, precisamos corrigir alguns detalhes de estilização
 
 <details>
   <summary>Sobre o desenvolvimento</summary>
