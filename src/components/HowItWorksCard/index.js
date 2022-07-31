@@ -33,10 +33,32 @@ function HowItWorksCard({
             },
           }}
         >
-          <Typography variant="h5" align="center" element="h2" gutterBottom>
+          <Typography
+            variant="h6"
+            align="center"
+            element="h2"
+            gutterBottom
+            sx={{
+              fontWeight: 600,
+              textAlign: {
+                xs: 'left',
+                sm: 'center',
+              },
+            }}
+          >
             {title}
           </Typography>
-          <Typography align="center" paragraph>
+          <Typography
+            align="center"
+            variant="body2"
+            paragraph
+            sx={{
+              textAlign: {
+                xs: 'left',
+                sm: 'center',
+              },
+            }}
+          >
             {description}
           </Typography>
         </HowItWorksCardTextContainer>
