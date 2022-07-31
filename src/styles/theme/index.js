@@ -33,6 +33,7 @@ const theme = createTheme({
     babyPink: '#d6a9d4',
     burnetOrange: '#8a2503',
     burnetSienna: '#D48C70',
+    lightIndigo: '#d9dffc',
   },
 });
 

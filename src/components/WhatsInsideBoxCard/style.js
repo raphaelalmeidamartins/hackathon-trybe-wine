@@ -8,9 +8,11 @@ export const CardContainer = styled(Grid)`
 `;
 
 export const ImageContainer = styled(Grid)`
-  align-items: center;
+  align-items: flex-start;
   display: flex;
-  height: 83px;
+  height: 200px;
+  width: 100%;
+  justify-content: center;
   object-fit: contain;
   position: relative;
 `;
