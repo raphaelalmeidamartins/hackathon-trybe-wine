@@ -39,9 +39,23 @@ export const PopoverButton = styled(Popover.Button)`
   background: #b6116e;
   border: none;
   border-radius: 100%;
-  padding-left: 0.75rem;
-  padding-right: 1.75rem;
-  height: 3rem;
+  padding-left: 1.50rem;
+  padding-right: 1.50rem;
+  height: 3.7rem;
   display: flex;
   align-items: center;
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+`;
+
+export const PopoverPanel = styled(Popover)`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 `;

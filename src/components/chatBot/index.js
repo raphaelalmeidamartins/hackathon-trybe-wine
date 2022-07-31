@@ -1,19 +1,17 @@
 import React from 'react';
+import { GiWineGlass } from 'react-icons/gi';
 import { Popover } from '@headlessui/react';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 import answers from './steps';
-import { theme, ContainerBot, PopoverButton } from './styles';
+import {
+  theme, ContainerBot, PopoverButton, PopoverPanel,
+} from './styles';
 
 export default function AlVinhoBot() {
   return (
-    <Popover className="relative">
+    <PopoverPanel>
       <ContainerBot>
-        <PopoverButton
-          className="popup"
-        >
-          O
-        </PopoverButton>
         <Popover.Panel>
           <ThemeProvider theme={theme}>
             <ChatBot
@@ -26,7 +24,12 @@ export default function AlVinhoBot() {
             />
           </ThemeProvider>
         </Popover.Panel>
+        <PopoverButton
+          className="popup"
+        >
+          {GiWineGlass}
+        </PopoverButton>
       </ContainerBot>
-    </Popover>
+    </PopoverPanel>
   );
 }
