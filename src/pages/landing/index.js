@@ -21,6 +21,8 @@ function Landing() {
         <Plans />
         <Benefits />
       </Container>
+        <Benefits headingToggle />
+      </main>
       <Footer />
     </>
   );
