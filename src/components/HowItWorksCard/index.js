@@ -23,7 +23,6 @@ function HowItWorksCard({
           xs={3}
           sm={4}
           md={4}
-          spacing={2}
           sx={{
             minHeight: {
               sx: '200px',
