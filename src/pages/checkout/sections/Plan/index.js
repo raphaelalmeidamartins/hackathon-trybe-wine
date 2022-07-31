@@ -1,7 +1,7 @@
 import {
+  Container,
   FormControl,
-  FormControlLabel,
-  Radio,
+  FormControlLabel, Grid, Paper, Radio,
   RadioGroup,
 } from '@mui/material';
 import React, { useEffect } from 'react';
@@ -25,10 +25,10 @@ function SubscriptionPlanForm() {
   };
 
   return (
-    <section>
-      <h2>
+    <Container component="section">
+      <h2 style={{ display: 'flex', alignItems: 'center' }}>
         <FiLayers />
-        {' Plano de pagamento'}
+        <span style={{ paddingLeft: '8px', paddingTop: '2px' }}>{' Plano de pagamento'}</span>
       </h2>
       <FormControl>
         <RadioGroup
@@ -39,21 +39,37 @@ function SubscriptionPlanForm() {
           value={selectedPlan}
           onChange={handleChange}
         >
-          <FormControlLabel
-            value="annual"
-            control={<Radio />}
-            label={MembershipPlanRadioLabel(planInfo.annual)}
-            labelPlacement="start"
-          />
-          <FormControlLabel
-            value="monthly"
-            control={<Radio />}
-            label={MembershipPlanRadioLabel(planInfo.monthly)}
-            labelPlacement="start"
-          />
+          <Grid container spacing={3} sx={{ paddingLeft: '12px' }}>
+            <Grid item xs={12} md={6}>
+              <Paper
+                sx={{
+                  width: '100%', padding: '16px', backgroundColor: 'white', border: `3px solid ${selectedPlan === 'annual' ? '#4E1A3E' : 'white'}`,
+                }}
+                component={FormControlLabel}
+                value="annual"
+                elevation={selectedPlan === 'annual' ? 6 : 1}
+                control={<Radio sx={{ marginRight: '16px' }} />}
+                label={MembershipPlanRadioLabel(planInfo.annual)}
+                labelPlacement="end"
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Paper
+                sx={{
+                  width: '100%', padding: '16px', backgroundColor: 'white', border: `3px solid ${selectedPlan === 'monthly' ? '#4E1A3E' : 'white'}`,
+                }}
+                component={FormControlLabel}
+                value="monthly"
+                elevation={selectedPlan === 'monthly' ? 6 : 1}
+                control={<Radio sx={{ marginRight: '16px' }} />}
+                label={MembershipPlanRadioLabel(planInfo.monthly)}
+                labelPlacement="end"
+              />
+            </Grid>
+          </Grid>
         </RadioGroup>
       </FormControl>
-    </section>
+    </Container>
   );
 }
 

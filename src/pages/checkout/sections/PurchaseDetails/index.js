@@ -1,7 +1,32 @@
-import React from 'react';
 import { Box, Container } from '@mui/material';
-import { useSelector } from 'react-redux';
+import React from 'react';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
+import { useSelector } from 'react-redux';
+import styled from 'styled-components';
+
+const DetailsRow = styled(Box)`
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+`;
+
+const DetailsRowGreen = styled(Box)`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #E5F2D9;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 8px;
+
+  p {
+    margin: 0;
+  }
+`;
+
+const RightAlignedParagraph = styled.p`
+  text-align: right;
+`;
 
 function PurchaseDetails() {
   const checkoutInfo = useSelector((state) => state.checkout);
@@ -11,40 +36,46 @@ function PurchaseDetails() {
 
   return (
     <Container component="section" maxWidth="lg">
-      <h2>
+      <h2 style={{ display: 'flex', alignItems: 'center' }}>
         <HiOutlineShoppingBag />
-        Detalhes
+        <span style={{ paddingLeft: '8px', paddingTop: '2px' }}>Detalhes</span>
       </h2>
-      <Box component="section">
+      <DetailsRow component="section">
         <p>Plano</p>
         <p>{subscriptionPlan === 'annual' ? 'Anual' : 'Mensal'}</p>
-      </Box>
-      <Box component="section">
+      </DetailsRow>
+      <DetailsRow component="section">
         <p>Subtotal</p>
-        <p>{total.toFixed(2)}</p>
-      </Box>
+        <p>{`R$ ${total.toFixed(2)}`}</p>
+      </DetailsRow>
       {subscriptionPlan === 'annual' && (
-        <Box component="section">
-          <p>Presente do plano anual</p>
-          <p>2 taças esclusivas</p>
-        </Box>
+        <DetailsRow component="section">
+          <DetailsRowGreen>
+            <p>Presente do plano:</p>
+            <RightAlignedParagraph>2 taças esclusivas</RightAlignedParagraph>
+          </DetailsRowGreen>
+        </DetailsRow>
       )}
-      <Box component="section">
-        <p>Desconto</p>
-        <p>{discount.toFixed(2)}</p>
-      </Box>
-      <Box component="section">
+      <DetailsRow component="section">
+        <DetailsRowGreen>
+          <p>Desconto</p>
+          <p>{`- R$ ${discount.toFixed(2)}`}</p>
+        </DetailsRowGreen>
+      </DetailsRow>
+      <DetailsRow component="section">
         <Box component="section">
           <p>Valor total</p>
         </Box>
         <Box component="section">
-          <p>{totalWithDiscount.toFixed(2)}</p>
-          <p>
-            Até 12x
-            <span>{`R$${totalDivided.toFixed(2)}`}</span>
-          </p>
+          <RightAlignedParagraph>{`R$ ${totalWithDiscount.toFixed(2)}`}</RightAlignedParagraph>
+          <RightAlignedParagraph>
+            <span style={{ fontSize: '1.2rem' }}>
+              {'té 12x '}
+            </span>
+            <span style={{ fontSize: '2rem', fontWeight: '600' }}>{`R$${totalDivided.toFixed(2)}`}</span>
+          </RightAlignedParagraph>
         </Box>
-      </Box>
+      </DetailsRow>
     </Container>
   );
 }

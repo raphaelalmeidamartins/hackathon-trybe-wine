@@ -35,6 +35,9 @@ const lightTheme = createTheme({
     burnetSienna: '#D48C70',
     lightIndigo: '#d9dffc',
   },
+  typography: {
+    fontFamily: '"Quicksand", "Helvetica", "Arial", sans-serif',
+  },
 });
 
 export default lightTheme;
