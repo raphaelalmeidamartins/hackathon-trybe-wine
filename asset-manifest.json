@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/hackathon-t19-wine/static/css/main.aefdc59b.css",
+    "main.js": "/hackathon-t19-wine/static/js/main.71f66cab.js",
+    "static/media/mock-essenciais.svg": "/hackathon-t19-wine/static/media/mock-essenciais.41faadbc876cc355e57e19efecae15cf.svg",
+    "static/media/icon-04.svg": "/hackathon-t19-wine/static/media/icon-04.d027c3488bd7c1bfe717bdde26fe8d0b.svg",
+    "static/media/icon-01.svg": "/hackathon-t19-wine/static/media/icon-01.44419ab97645ec8c7f71db4a0d97d6c9.svg",
+    "static/media/gift-coupon.svg": "/hackathon-t19-wine/static/media/gift-coupon.2819d1b27525bc1d8f6c44137a0aba82.svg",
+    "static/media/placeholder.jpg": "/hackathon-t19-wine/static/media/placeholder.fb1df90b07a98a90e069.jpg",
+    "static/media/truck.svg": "/hackathon-t19-wine/static/media/truck.497681e22499923059b28e447bc18956.svg",
+    "static/media/icon-02.svg": "/hackathon-t19-wine/static/media/icon-02.b60be13f51dae5ec032f96edb5069814.svg",
+    "static/media/coupon.svg": "/hackathon-t19-wine/static/media/coupon.e94cb974552de13ae28ef9091ccbe7cc.svg",
+    "static/media/money-bag.svg": "/hackathon-t19-wine/static/media/money-bag.3c7ef9a8d9386eac4d788db02044663e.svg",
+    "static/media/toast.svg": "/hackathon-t19-wine/static/media/toast.f1081305877729ea852f2dc38c3ab00a.svg",
+    "static/media/icon-03.svg": "/hackathon-t19-wine/static/media/icon-03.ff4febb7a0a44f78c7a42b639322aba5.svg",
+    "static/media/dropper.png": "/hackathon-t19-wine/static/media/dropper.90b543e46f1c01531413.png",
+    "static/media/magazine.png": "/hackathon-t19-wine/static/media/magazine.ed57b89b7016f175b0c3.png",
+    "static/media/wineBottles.png": "/hackathon-t19-wine/static/media/wineBottles.4cf1b4a7e0fc9a7cf635.png",
+    "static/media/Alvinho.svg": "/hackathon-t19-wine/static/media/Alvinho.d90ddd91164c24bf5defeb75bba1ccfa.svg",
+    "static/media/wine-logo.svg": "/hackathon-t19-wine/static/media/wine-logo.f658ca14467db13061ce9bb6b17aa4a4.svg",
+    "static/media/wine-w-logo.svg": "/hackathon-t19-wine/static/media/wine-w-logo.bd2aea7a98ed040bfbebb214420e7596.svg",
+    "index.html": "/hackathon-t19-wine/index.html",
+    "main.aefdc59b.css.map": "/hackathon-t19-wine/static/css/main.aefdc59b.css.map",
+    "main.71f66cab.js.map": "/hackathon-t19-wine/static/js/main.71f66cab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aefdc59b.css",
+    "static/js/main.71f66cab.js"
+  ]
+}
