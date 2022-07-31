@@ -5,6 +5,7 @@ import Benefits from './sections/Benefits';
 import Header from '../../components/Header';
 import HowItWorks from './sections/HowItWorks';
 import WhatsInsideYourBox from './sections/WhatsInsideYourBox';
+import AlVinhoBot from '../../components/chatBot';
 
 function Landing() {
   return (
@@ -12,6 +13,7 @@ function Landing() {
       <Header />
       <main>
         <HowItWorks />
+        <AlVinhoBot />
         <WhatsInsideYourBox />
         <Plans />
         <Benefits />
