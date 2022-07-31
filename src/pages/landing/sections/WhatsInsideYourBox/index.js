@@ -7,7 +7,7 @@ import wineBottles from './images/wineBottles.png';
 
 function WhatsInsideYourBox() {
   return (
-    <section>
+    <section style={{ marginBottom: '32px' }}>
       <Typography variant="h3" align="center" component="h2" gutterBottom>
         O que vai dentro da sua WineBox?
       </Typography>

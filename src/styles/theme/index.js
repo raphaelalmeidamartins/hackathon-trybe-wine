@@ -20,7 +20,8 @@ const theme = createTheme({
       hint: 'rgba(57, 19, 6, 0.7)',
     },
     background: {
-      default: '#CFEED1',
+      // default: '#CFEED1',
+      default: '#FCFCFC',
       paper: '#F7BEC0',
     },
   },
