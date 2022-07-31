@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": false,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "colorize.languages": ["javascriptreact", "javascript", "css", "scss"],
+  "conventionalCommits.scopes": [
+    "howItWorks",
+    "howItWorks/icons",
+    "README.md"
+  ],
+  "cSpell.words": [
+    "headlessui",
+    "Neue"
+  ]
+}
