@@ -247,17 +247,90 @@ const answers = [
     message: 'Os peixes acompanhados por molhos mais fortes harmonizam melhor com vinho tinto jovem ou com vinho branco maduro.',
     trigger: 'red-wine',
   },
-    end: true,
+  {
+    id: 'pasta',
+    message: 'As massas também servem como acompanhamento de vinho. Nesse caso, os molhos desempenham um importante papel no momento de optar por um tipo de vinho. ',
+    trigger: 'pasta-options',
   },
   {
-    id: 'other drinks',
-    component: (
-      <ChatBotContainer>
-        <h1>Assinaturas</h1>
-        <Link to="/checkout">Assinaturas</Link>
-      </ChatBotContainer>
-    ),
-    end: true,
+    id: 'pasta-options',
+    options: [
+      { value: 1, label: 'molho à bolonhesa', trigger: 'bolognese' },
+      { value: 2, label: 'molho de tomate', trigger: 'tomato' },
+      { value: 3, label: 'molho carbonara', trigger: 'carbonara' },
+      { value: 4, label: 'molho à base de alho', trigger: 'pesto' },
+      { value: 5, label: 'molho com frutos do mar', trigger: 'seafood' },
+    ],
+  },
+  {
+    id: 'bolognese',
+    message: 'o molho tem cebola, tomate e carne moída, pedindo vinho tinto de boa textura, caloroso.',
+    trigger: 'red-wine',
+  },
+  {
+    id: 'tomato',
+    message: 'o vinho rosé, que é um tipo de vinho situado entre o tinto e o branco, é o que melhor se ajusta ao tomate (fruto de sabor refinado).',
+    trigger: 'rose-wine',
+  },
+  {
+    id: 'carbonara',
+    message: 'o molho é à base de creme, bacon e ovo, então combina melhor com vinho branco seco e encorpado, com certo equilíbrio entre gordura e acidez.',
+    trigger: 'white-wine',
+  },
+  {
+    id: 'pesto',
+    message: 'molho feito à base de alho, manjericão e azeite de oliva, possui muita intensidade em sabor e aroma, por isso combina muito bem com vinho branco;',
+    trigger: 'white-wine',
+  },
+  {
+    id: 'seafood',
+    message: 'os frutos do mar combinam com vinho branco.',
+    trigger: 'white-wine',
+  },
+  {
+    id: 'cheese',
+    message: 'Existem algumas regras que precisam ser observadas quando se trata de acompanhamento de vinho com queijo.',
+    trigger: 'cheese2',
+  },
+  {
+    id: 'cheese2',
+    message: 'Queijos de sabor muito intenso geralmente suplantam o vinho, o que não representa uma combinação muito boa. A combinação com vinho deve considerar textura e sabor.',
+    trigger: 'cheese-options',
+  },
+  {
+    id: 'cheese-options',
+    options: [
+      { value: 1, label: 'queijo muito duro', trigger: 'hard-cheese' },
+      { value: 2, label: 'queijo cremoso', trigger: 'cream-cheese' },
+      { value: 3, label: 'queijo macio', trigger: 'soft-cheese' },
+      { value: 4, label: 'Frescos de ricota', trigger: 'goat-cheese' },
+      { value: 5, label: 'queijo de Cabra', trigger: 'goat-cheese' },
+    ],
+  },
+  {
+    id: 'hard-cheese',
+    message: 'Queijos muito duros, como o parmesão, exigem vinho com muito tanino, que é uma substância que se encontra no grupo de fenóis vegetais e existe em sementes, caules e cascas de frutas verdes. ',
+    trigger: 'red-wine',
+  },
+  {
+    id: 'cream-cheese',
+    message: 'Queijos cremosos exigem vinhos com mais acidez. Os queijos sem casca e frescos harmonizam com vinhos brancos mais leves.',
+    trigger: 'white-wine',
+  },
+  {
+    id: 'soft-cheese',
+    message: 'Os queijos macios com casca rija, desde que não sejam bem curados, harmonizam muito bem com vinhos tinto de classe e até com vinhos brancos. ',
+    trigger: 'red-white-wine',
+  },
+  {
+    id: 'goat-cheese',
+    message: 'Os queijos frescos de ricota e de cabra, que apresentam massa mole, combinam bem com vinhos brancos de aromas agradáveis e suaves. Esse tipo de queijo  harmoniza com vinho rosé',
+    trigger: 'rose-wine',
+  },
+  {
+    id: 'dessert',
+    message: 'Destilados de uva são ótimos para estimular a digestão. Outra dica é beber vinho branco doce, um espumante doce ou um fortificado',
+    trigger: 'sparkling-wine',
   },
 ];
 
