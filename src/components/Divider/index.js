@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import theme from '../../styles/theme';
+import lightTheme from '../../styles/lightTheme';
 
 function Divider() {
-  const { colors } = theme;
+  const { colors } = lightTheme;
 
   return (
     <Box sx={{ backgroundColor: colors.burnetSienna, width: '100vw', height: '30px' }} />
