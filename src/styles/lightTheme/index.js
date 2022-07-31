@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material';
 
-const theme = createTheme({
+const lightTheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
@@ -22,9 +22,12 @@ const theme = createTheme({
     background: {
       default: '#FCFCFC',
       paper: '#F7BEC0',
+      wineBox: 'white',
     },
   },
   colors: {
+    plansCard: 'white',
+    borderGrey: '#eee',
     mainOrange: '#F68B2C',
     mainPurple: '#4E1A3D',
     carafe: '#4E1A3D',
@@ -40,4 +43,4 @@ const theme = createTheme({
   },
 });
 
-export default theme;
+export default lightTheme;

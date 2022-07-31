@@ -1,13 +1,17 @@
 import { Grid, Typography } from '@mui/material';
+import useTheme from '@mui/material/styles/useTheme';
 import PropTypes from 'prop-types';
 import React from 'react';
-import theme from '../../styles/theme';
-import { CardContainer, ImageContainer, TextContainer } from './style';
+import {
+  CardContainer,
+  ImageContainer,
+  TextContainer,
+} from './style';
 
 function WhatsInsideBoxCard({
   cardImage, cardTitle, content, imgDescription,
 }) {
-  const { colors } = theme;
+  const theme = useTheme();
 
   return (
     <Grid component="section" container columns={{ xs: 2, sm: 12, md: 4 }}>
@@ -28,7 +32,7 @@ function WhatsInsideBoxCard({
             gutterBottom
             sx={{
               fontWeight: 600,
-              color: colors.burnetOrange,
+              color: theme.colors.burnetOrange,
               textAlign: {
                 xs: 'center',
                 md: 'left',

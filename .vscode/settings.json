@@ -5,6 +5,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "colorize.languages": ["javascriptreact", "javascript", "css", "scss"],
   "conventionalCommits.scopes": [
     "howItWorks",
     "howItWorks/icons",

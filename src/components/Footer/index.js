@@ -2,11 +2,11 @@ import {
   Box, Container, Grid, Typography,
 } from '@mui/material';
 import React from 'react';
-import theme from '../../styles/theme';
+import lightTheme from '../../styles/lightTheme';
 import wineWLogo from './utils/images/wine-w-logo.svg';
 
 function Footer() {
-  const { palette, colors } = theme;
+  const { palette, colors } = lightTheme;
 
   return (
     <Box

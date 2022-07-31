@@ -24,7 +24,4 @@ export const TextContainer = styled(Grid)`
   h3 {
     color: #c81a78;
   }
-  p {
-    color: #474952;
-  }
 `;

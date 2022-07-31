@@ -1,13 +1,15 @@
 import { Container, Grid, Typography } from '@mui/material';
+import useTheme from '@mui/material/styles/useTheme';
 import PropTypes from 'prop-types';
 import React from 'react';
 import BenefitBox from '../../../../components/BenefitBox';
 import { benefits } from './utils/helpers';
 
 function Benefits({ headingToggle }) {
+  const theme = useTheme();
   return (
     <section style={{
-      padding: '48px 0', width: '100vw', backgroundColor: 'white', borderTop: '1px solid #eee',
+      padding: '48px 0', width: '100vw', backgroundColor: theme.palette.background.wineBox, borderTop: `1px solid ${theme.colors.borderGrey}`,
     }}
     >
       <Container>

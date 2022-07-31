@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Box } from '@mui/material';
 
 export default styled(Box)`
-  background: linear-gradient(0deg, rgba(246, 139, 44, 0.36) 0%, white 100%);
+  background: ${(props) => props.theme.colors.gradient});
   padding-bottom: 32px;
   width: 100vw;
 
