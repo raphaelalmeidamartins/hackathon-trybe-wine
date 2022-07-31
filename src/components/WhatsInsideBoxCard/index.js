@@ -14,9 +14,9 @@ function WhatsInsideBoxCard({
   const { colors } = theme;
 
   return (
-    <Grid component="section" container columns={{ xs: 2, sm: 12, md: 4 }}>
+    <Grid component="section" container columns={{ xs: 2, sm: 12, md: 4 }} sx={{ border: '1px solid black' }}>
       <CardContainer container columns={{ xs: 12, sm: 4, md: 12 }}>
-        <ImageContainer item xs={3} sm={4} md={4}>
+        <ImageContainer item xs={3} sm={4} md={4} sx={{ border: '1px solid black' }}>
           <img src={cardImage} alt={imgDescription} />
         </ImageContainer>
         <TextContainer
