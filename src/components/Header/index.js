@@ -1,10 +1,9 @@
-import { SvgIcon } from '@mui/material';
+import { Drawer, SvgIcon } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import IconButton from '@mui/material/IconButton';
-import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import * as React from 'react';
@@ -75,35 +74,32 @@ function Header() {
             >
               <MenuHambugerIcon />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
+            <Drawer
+              variant="temporary"
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
+              ModalProps={{
+                keepMounted: true,
+              }}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                '& .MuiDrawer-paper': { width: '50%' },
               }}
             >
               {navLinks.map(({ name, href }) => (
                 <MenuItem key={href} onClick={handleCloseNavMenu}>
-                  <Button variant="text" component="a" href={href}>
+                  <Button variant="text" component="a" href={href} sx={{ justifyContent: 'flex-start' }}>
                     {name}
                   </Button>
                 </MenuItem>
               ))}
-            </Menu>
+            </Drawer>
           </Box>
           <Box
-            sx={{ display: { xs: 'block', md: 'none' }, flexGrow: 1, marginRight: '20px' }}
+            sx={{
+              display: { xs: 'block', md: 'none' },
+              flexGrow: 1,
+              marginRight: '20px',
+            }}
           >
             <Logo />
           </Box>
