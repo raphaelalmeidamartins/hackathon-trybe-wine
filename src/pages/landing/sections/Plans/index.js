@@ -1,4 +1,6 @@
-import { Container, Grid, Hidden } from '@mui/material';
+import {
+  Container, Grid, Hidden,
+} from '@mui/material';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PlanCard from '../../../../components/PlanCard';

@@ -7,13 +7,13 @@ import IconButton from '@mui/material/IconButton';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import * as React from 'react';
-import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { useDispatch, useSelector } from 'react-redux';
 import { setTheme } from '../../store/theme';
+import lightTheme from '../../styles/lightTheme';
 import navLinks from './utils/helpers';
 import MenuHambugerIcon from './utils/icons/MenuHamburgerIcon';
 import logo from './utils/images/wine-logo.svg';
-import lightTheme from '../../styles/lightTheme';
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

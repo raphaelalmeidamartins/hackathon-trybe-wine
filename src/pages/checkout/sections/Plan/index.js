@@ -3,6 +3,7 @@ import {
   FormControl,
   FormControlLabel, Grid, Paper, Radio,
   RadioGroup,
+  useTheme,
 } from '@mui/material';
 import React, { useEffect } from 'react';
 import { FiLayers } from 'react-icons/fi';
@@ -14,6 +15,7 @@ import planInfo from './utils/helpers';
 function SubscriptionPlanForm() {
   const selectedPlan = useSelector((state) => state.checkout.subscriptionPlan);
   const dispatch = useDispatch();
+  const theme = useTheme();
 
   useEffect(() => {
     dispatch(setTotal());
@@ -43,7 +45,7 @@ function SubscriptionPlanForm() {
             <Grid item xs={12} md={6}>
               <Paper
                 sx={{
-                  width: '100%', padding: '16px', backgroundColor: 'white', border: `3px solid ${selectedPlan === 'annual' ? '#4E1A3E' : 'white'}`,
+                  width: '100%', padding: '16px', backgroundColor: theme.colors.plansCard, border: `3px solid ${selectedPlan === 'annual' ? '#4E1A3E' : theme.colors.plansCard}`,
                 }}
                 component={FormControlLabel}
                 value="annual"
@@ -56,7 +58,7 @@ function SubscriptionPlanForm() {
             <Grid item xs={12} md={6}>
               <Paper
                 sx={{
-                  width: '100%', padding: '16px', backgroundColor: 'white', border: `3px solid ${selectedPlan === 'monthly' ? '#4E1A3E' : 'white'}`,
+                  width: '100%', padding: '16px', backgroundColor: theme.colors.plansCard, border: `3px solid ${selectedPlan === 'monthly' ? '#4E1A3E' : theme.colors.plansCard}`,
                 }}
                 component={FormControlLabel}
                 value="monthly"
