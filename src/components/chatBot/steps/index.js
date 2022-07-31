@@ -164,6 +164,50 @@ const answers = [
     id: 'rose-wine3',
     component: (<Button component="a" href="https://www.wine.com.br/browse.ep?cID=100851&exibirEsgotados=false&listagem=horizontal&sorter=featuredProducts-desc&filters=cVINHOS%20atTIPO_ROSE">Encontrar vinhos licorosos</Button>),
   },
+  {
+    id: 'wine-by-side',
+    message: 'É importante harmonizar a bebida com a comida, pois determinados alimentos realçam o sabor do vinho.',
+    trigger: 'wine-by-side2',
+  },
+  {
+    id: 'wine-by-side2',
+    message: 'Você deseja encontrar um vinho que combine com qual entrada ou prato principal?',
+    trigger: 'wine-type-options',
+  },
+  {
+    id: 'wine-type-options',
+    options: [
+      { value: 1, label: 'petisco', trigger: 'sidedishes' },
+      { value: 2, label: 'carnes', trigger: 'meat' },
+      { value: 3, label: 'peixes', trigger: 'fish' },
+      { value: 4, label: 'massas', trigger: 'pasta' },
+      { value: 5, label: 'queijos', trigger: 'cheese' },
+      { value: 6, label: 'Sobremesas', trigger: 'dessert' },
+    ],
+  },
+  {
+    id: 'sidedishes',
+    options: [
+      { value: 1, label: 'Petiscos com carne', trigger: 'sidedishes-red' },
+      { value: 2, label: 'Frutos do mar', trigger: 'sidedishes-white' },
+      { value: 3, label: 'Petiscos gordurosos', trigger: 'sidedishes-sparkling' },
+    ],
+  },
+  {
+    id: 'sidedishes-red',
+    message: 'Para harmonizar com pratos de carne com gordura, recomenda-se beber vinho tinto com agradável frescor.',
+    trigger: 'red-wine',
+  },
+  {
+    id: 'sidedishes-white',
+    message: 'Os petiscos de peixes e frutos do mar combinam com o vinho branco porque ele é leve, com acidez moderada e muito aromático.',
+    trigger: 'white-wine',
+  },
+  {
+    id: 'sidedishes-sparkling',
+    message: 'Recomenda-se o espumante pois é leve e possui acentuado frescor,pois esses petiscos são caracterizados pela concentração elevada de gordura.',
+    trigger: 'sparkling-wine',
+  },
     end: true,
   },
   {
