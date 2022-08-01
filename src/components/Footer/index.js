@@ -32,14 +32,22 @@ function Footer() {
               <img alt="wine w logo" src={wineWLogo} />
             </Box>
             <Box>
-              <Typography variant="body2" paragraph sx={{ color: colors.babyPink }}>
+              <Typography
+                variant="body2"
+                paragraph
+                sx={{ color: colors.babyPink }}
+              >
                 <strong>W2W E-Commerce de Vinhos S.A</strong>
                 <br />
                 CNPJ: 09.813.204/0002-05
               </Typography>
-              <Typography variant="body2" paragraph sx={{ color: colors.babyPink }}>
-                Rua Comendador Alcides Simão Helou, 1478 - Serra/ES - CEP
-                29168-090
+              <Typography
+                variant="body2"
+                paragraph
+                sx={{ color: colors.babyPink }}
+              >
+                Esse projeto foi desenvolvido apenas para fins didáticos. Nós não
+                temos direito sobre a marca Wine e seus produtos e serviços.
               </Typography>
             </Box>
           </Grid>
