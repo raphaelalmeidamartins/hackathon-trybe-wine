@@ -27,7 +27,7 @@ function HowItWorksCard({
           sx={{
             minHeight: {
               sx: '200px',
-              sm: '400px',
+              sm: '300px',
               md: '300px',
               lg: '200px',
               xl: '200px',
