@@ -39,6 +39,9 @@ const darkTheme = createTheme({
     gradient: 'linear-gradient(0deg, rgba(209, 112, 212, 0.25) 0%, #3b1e2e 100%',
     lightIndigo: '#2a3468',
   },
+  typography: {
+    fontFamily: '"Quicksand", "Helvetica", "Arial", sans-serif',
+  },
 });
 
 export default darkTheme;
