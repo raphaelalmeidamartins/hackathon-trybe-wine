@@ -34,7 +34,7 @@ function PlanCard({ selectedPlan }) {
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
-        <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
           <div>
             <span>Plano</span>
             <h2>{selectedPlan.name.split(' ')[1].toUpperCase()}</h2>
